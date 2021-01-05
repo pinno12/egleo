@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="h-100" lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="주식, db, 이글레오">
+  <meta name="author" content="임한석, 서천일">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <meta property="og:title" content="주식 DB">
+  <meta property="og:description" content="다양하게 분석하는 주식 DB">
+  <meta property="og:image" content="images/logo.png">
+  <title>이글레오</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="./script.js" defer></script>
+  <style>
+
+  </style>
+
+
+</head>
+
+<body class="d-flex flex-column h-100">
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu bg-e"
+      aria-label="Twelfth navbar example">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10" style="height:2rem;">
+          <ul class="navbar-nav  d-flex justify-content-between" style="width:100%">
+            <li class="nav-item">
+              <a href="#" class="header nav-link text-gray-e"><img class="logo" src="images/logo.png"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="margin-top: 0.3rem;">서비스 소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="margin-top: 0.3rem;">STOCK DB 사용법</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="margin-top: 0.3rem;">연락처</a>
+            </li>
+            <!--             
+
+            <li class="ui simple dropdown nav-item" style = "margin-top:2.5%">
+              회사 소개 <i class="dropdown icon"></i>
+              <div class="menu">
+                <a class="item" href="#">서비스 소개</a>
+                <a class="item" href="#"></a>
+                <a class="item" href="#">연락처</a>
+              </div>
+            </li> -->
+
+            <div class="nav-item text-gray-e dropdown mt-1 ">
+              <a class="nav-link dropdown-toggle text-gray-e" href="#" id="dropdown10" data-bs-toggle="dropdown"
+                aria-expanded="false">로그인</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main role="main" class="flex-shrink-0 mt-5">
+    <div class="container mt-5">
+      <div class="row justify-content-center my-5 py-5">
+        <div class="col-lg-5 col-11">
+          <h1 class="text-yellow-e">회사 소개</h1>
+          <h3 style="line-height: 2.5rem;">
+            "과거를 알면 미래가 보인다"는 동서고금(東西古今)의 명언이 있습니다. <br />
+            (주)이글레오FT는 인간의 자연스런 본능 중 하나인 “자산 증식 욕구” 충족에 보탬이 될 수 있는 과학적이고, 합리적인 첨단기술과 사상을 바탕으로 고객의 “윤택한 행복 가치” 실현을 추구
+            합니다.
+          </h3>
+        </div>
+        <div class="col-lg-5 col-11">
+          <img src="images/company-1.png" width="100%">
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-5 py-5 bg-e">
+        <div class="col-lg-5 col-11">
+          <img src="images/company2.png" width="100%">
+        </div>
+        <div class="col-lg-5 col-11">
+          <h1 class="text-yellow-e">EGLEO의 가치</h1>
+          <h3 style="line-height: 2.5rem;">
+            빅 데이터 기술을 활용한 정보수집, 추출, 분석 및 추론 적용을 통하여 주식 투자에 대한 성공적인 의사결정 수립이라는 고객의 가치에 기여합니다.<br />
+            - 빅 데이터 특성인 데이터의 다양성(Variety)과 변화 속도(Velocity)에 초점을 두어 탄생한 자사 STOCK DB 플랫폼과 30년 이상 축적된 주식 전문가의 Knowhow가 융합하여
+            우량 투자종목을 선별 할 수 있는 역량을 육성 해 드립니다.
+          </h3>
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-5 py-5">
+        <div class="col-lg-5 col-11">
+          <h3 style="line-height: 2rem;">
+무리하고 빈약한 결과값(추천 종목) 지향이 아닌 공신력 있는 데이터를 기반으로 과학적이고 합리적 추론 과정의 학습을 통해 성공적인 주식투자에 대한 고객의 식견과 통찰력 향상에 기여 합니다.<br />
+- 고차원 DB(데이터 베이스) 기술을 적용한 유효 데이터의 가공 및 분석 그리고 개인 특성화 맞춤 종목을 추출, 생성 합니다.
+<br /> 
+- 핀테크(Fintech)시대의 주식 초보자 부터 전문가 수준에 이르는 폭넓은 맞춤형 반의정보서비스를 제공합니다.
+          </h3>
+        </div>
+        <div class="col-lg-5 col-11">
+          <img src="images/company3.png" width="110%">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">이글레오 2021</span>
+    </div>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
