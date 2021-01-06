@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="주식, db, 이글레오">
   <meta name="author" content="임한석, 서천일">
   <meta name="generator" content="Jekyll v4.1.1">
@@ -12,18 +12,20 @@
   <meta property="og:image" content="images/thumbnail.png">
   <title>솔루션 서비스 차별화 비교</title>
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap"
     rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
@@ -32,7 +34,6 @@
   <link rel="stylesheet" href="./style.css">
 
   <!-- import the webpage's javascript file -->
-  <script src="./script.js" defer></script>
   <style>
 
   </style>
@@ -42,69 +43,35 @@
 
 <body class="d-flex flex-column h-100">
   <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu bg-e"
-      aria-label="Twelfth navbar example">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
-          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10" style="height:2rem;">
-          <ul class="navbar-nav  d-flex justify-content-between" style="width:100%">
-            <li class="nav-item">
-              <a href="#" class="header nav-link text-gray-e"><img class="logo" src="images/logo.png"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="margin-top: 0.3rem;">서비스 소개</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="margin-top: 0.3rem;">STOCK DB 사용법</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="margin-top: 0.3rem;">연락처</a>
-            </li>
-            <div class="nav-item text-gray-e dropdown mt-1 ">
-              <a class="nav-link dropdown-toggle text-gray-e" href="#" id="dropdown10" data-bs-toggle="dropdown"
-                aria-expanded="false">로그인</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdown10">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
   <main role="main" class="flex-shrink-0 mt-5">
     <div class="container mt-5">
 
       <div class="row d-flex justify-content-center">
-        <div class="col-11 col-lg-6  ">
+        <div class="col-11 col-lg-6">
           <img src="images/pros1.png" width="100%">
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-11 col-lg-12 text-yellow-e text-center">
           <h1>차별화 된 주식 투자 정보 서비스가 당신을 성공의 길로 인도 합니다!!</h1>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mt-5" data-aos="fade-up">
         <div class="col-11 col-lg-5">
           <img src="images/pros2.png" width="100%">
         </div>
-        <div class="col-12 col-lg-7">  
+        <div class="col-12 col-lg-7">
           <div class="ui tall stacked segment">
             <ol class="ui list">
-              <li value="✔︎">3차원 형태의 데이터 구조</li>
-              <li value="✔︎"> 강력한 검색 조건(필터링) : 변수(값)+가변 일자 기준(과거~현재)</li>
-              <li value="✔︎">효율적인 추출/가공 기능 : 다양한 변수 값(재무정보/5일 이동 평균/RSI /MACD등)을 입력하고, “현재일” 뿐만이 아닌 “과거일” 부터 사용자가 원하는 일자 기준으로 가변성,
+              <b style="line-height: 4rem;">EGLEO서비스 특징</b>
+
+              <li value="✔︎" data-aos="fade-up"">3차원 형태의 데이터 구조</li>
+              <li value=" ✔︎" data-aos="fade-up""> 강력한 검색 조건(필터링) : 변수(값)+가변 일자 기준(과거~현재)</li>
+              <li value=" ✔︎" data-aos="fade-up"">효율적인 추출/가공 기능 : 다양한 변수 값(재무정보/5일 이동 평균/RSI /MACD등)을 입력하고, “현재일” 뿐만이 아닌 “과거일” 부터 사용자가 원하는 일자 기준으로 가변성,
                 유연성 있게 주식 데이터를 가공하여 유의미한 투자 종목을 산출 할 수 있다.         
               </li>           
             </ol>
@@ -112,50 +79,113 @@
         </div>
       </div>
 
-      <div class="row bg-e" >
-        <div class="col-11 col-lg-4">
-          <img src="images/pros3.png" style="width:100%;">
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-11 col-lg-10">
-          <ol class="ui list">
-            <li value="*">주식 투자에 주요 지표가 되는 여러 변수(값)과 시간의 흐름(과거~현재)을 조합하여 우량 투자종목 선별이 가능케 합니다.
-            </li>
-            <li value="*">다양한 변수(값)을 기준으로 하는 3차원적 조합 및 가공, 추출을 하는 일련의 반복된 학습과정을 통해 보다 경쟁력 높은 투자 통찰력을 확보 할 수 있습니다.
-            </li>
-            <li value="*">
-              종목, 변수(값), 시점의 다양한 3차원적 기준을 세워 주식 데이터 추출 및 가공을 쉽게 할 수 있으며, 보다 입체적이고 합리적인 투자 우량종목을 생성 할 수 있습니다.
-
-            </li>
-
-          </ol>
-        </div>
-      </div>
-      <div class="row">
-        <div class="ui inverted segment">
-          <div class="ui inverted accordion">
-            <div class="title">
-              <i class="dropdown icon"></i>
-              What is a dog?
-            </div>
-            <div class="content">
-              <p class="transition hidden">A dog is a type of domesticated animal. Known for its loyalty and
-                faithfulness, it can be found as a welcome guest in many households across the world.</p>
-            </div>
-
+      <div class=" row bg-e justify-content-center">
+                <div class="col-11 col-lg-4 my-5">
+                  <img src="images/pros3.png" data-aos="flip-up" style="width:100%;">
+                </div>
           </div>
+
+          <div class="row justify-content-center">
+            <div class="col-11 col-lg-10">
+              <ol class="ui list">
+                <li value="*">주식 투자에 주요 지표가 되는 여러 변수(값)과 시간의 흐름(과거~현재)을 조합하여 우량 투자종목 선별이 가능케 합니다.
+                </li>
+                <li value="*">다양한 변수(값)을 기준으로 하는 3차원적 조합 및 가공, 추출을 하는 일련의 반복된 학습과정을 통해 보다 경쟁력 높은 투자 통찰력을 확보 할 수 있습니다.
+                </li>
+                <li value="*">
+                  종목, 변수(값), 시점의 다양한 3차원적 기준을 세워 주식 데이터 추출 및 가공을 쉽게 할 수 있으며, 보다 입체적이고 합리적인 투자 우량종목을 생성 할 수 있습니다.
+
+                </li>
+
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    다른 서비스와 어떻게 다를까요?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <table class="ui very basic table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>이글레오FT사</th>
+                          <th>국내 증권사(HTS)</th>
+                          <th>국내 포탈 N사/D사</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>주식 투자 정보 검색 구조</td>
+                          <td>
+                            3차원
+                            다양한 변수(값) + 가변 일자 기준(과거~현재)
+                            다양한 변수 값(재무정보/5일 이동 평균/RSI /MACD등)을 입력하고,
+                            “현재일” 뿐만이 아닌 “과거일” 부터 사용자가 원하는 일자 기준으로 가변성, 유연성 있게 주식 데이터를 가공하여 유의미한 투자 종목을 산출 할 수 있습니다.
+
+                          </td>
+                          <td>2차원
+                            다양한 변수(값) + 현재일 기준
+                            다양한 변수 값(재무정보/5일 이동평균선/RSI/
+                            MACD등)을 입력하고 나면,
+                            “현재일” 기준으로 해당 여러 종목이 도출, 나열 됩니다
+
+                          </td>
+                          <td>
+                            1차원
+                            특정(고정)종목 + 현재일 기준
+                            특정 종목을 선택하면 그 종목에 대한 여러가지 정보가 도출, 나열됩니다.
+                            모든 정보의 기준 일자는 “현재일”로 고정 되어있습니다.
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>특장(단)점</td>
+                          <td>주식 투자에 주요 지표가 되는 여러 변수(값)과 시간의 흐름(과거~현재)을 조합하여 우량 투자종목 선별이 가능케 합니다.
+                            다양한 변수(값)을 기준으로 하는 3차원적 조합 및 가공, 추출을 하는 일련의 반복된 학습과정을 통해 보다 경쟁력 높은 투자 통찰력을 확보 할 수 있습니다.
+                            종목, 변수(값), 시점의 다양한 3차원적 기준을 세워 주식 데이터 추출 및 가공을 쉽게 할 수 있으며, 보다 입체적이고 합리적인 투자 우량종목을 생성 할 수
+                            있습니다.
+                          </td>
+                          <td>다양한 변수(값)의 조합으로 종목 선별이 가능하나 “현재일” 기준이므로 과거로 부터 누적된 흐름 분석 및 변화와 특징을 간파하기에는 다분이 어려움이 있습니다.
+                            투자 종목에 대한 최종의사결정에 부족 함이 있습니다.
+                            일반인 보다는 전문가 또는 베테랑에 적합한 서비스.
+                          </td>
+                          <td>
+                            포탈사로서의 역할에 지극히 충실한 서비스.
+                            종목+현재일 기준의 단순 나열 서비스.
+                            이 서비스로 수많은 국내 종목들을 비교 분석한다는 것은 거의 불가능.
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Jill</td>
+                          <td>Denied</td>
+                          <td>None</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
         </div>
-
-      </div>
-
-
-
-
-
-
-    </div>
   </main>
 
   <footer class="footer mt-auto py-3">
@@ -169,20 +199,17 @@
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+
 
 </body>
 
