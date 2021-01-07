@@ -21,7 +21,7 @@
     }
 
     .text-yellow-e{
-        color:#FFB81C;
+        color:#FFB81C !important;
     }
 
     .bg-e{
@@ -75,6 +75,15 @@ a:hover {
   font-weight:600;
 }
 
-.ui.list .list>.item, .ui.list>.item, ol.ui.list li, ul.ui.list li {
+/* .ui.list .list>.item, .ui.list>.item, ol.ui.list li, ul.ui.list li {
   line-height: 4rem;
+} */
+
+#main{
+  background-image: url("images/join.png");
+}
+
+a{color: lightgray;
+/* text-decoration:underline; */
+
 }
