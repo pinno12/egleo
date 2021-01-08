@@ -1,185 +1,240 @@
+<!DOCTYPE html>
+<html class="h-100" lang="ko">
 
-<!doctype html>
-<html class="h-100" lang="ko">    
-  <head>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="주식, db, 이글레오">
-  <meta name="author" content="임한석, 서천일">
-  <meta name="generator" content="Jekyll v4.1.1">
-  <meta property="og:title" content="주식 DB">
-  <meta property="og:description" content="다양하게 분석하는 주식 DB">
-  <meta property="og:image" content="images/logo.png">
-  <title>이글레오</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="주식, db, 이글레오" />
+  <meta name="author" content="임한석, 서천일" />
+  <meta name="generator" content="Jekyll v4.1.1" />
+  <meta property="og:title" content="주식 DB" />
+  <meta property="og:description" content="다양하게 분석하는 주식 DB" />
+  <meta property="og:image" content="images/logo.png" />
+  <title>회원 가입</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+
   <!-- favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="./script.js" defer></script>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- import the webpage's javascript file -->
+  <script src="./script.js" defer></script>
+
+
+
   <style>
-  
-  </style>
 
-
-  </head>
-  
-  <body class="d-flex flex-column h-100">
-    <!-- Header -->
-    <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu bg-e" aria-label="Twelfth navbar example">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10" style = "height:2rem;" >
-          <ul class="navbar-nav  d-flex justify-content-between" style = "width:100%" >
-            <li class="nav-item">
-              <a href="/index.html" class="header nav-link text-gray-e"><img class="logo" src="images/logo.png"></a>    
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style = "margin-top: 0.3rem;">서비스 소개</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pros.html" style = "margin-top: 0.3rem;">STOCK DB 사용법</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style = "margin-top: 0.3rem;">연락처</a>
-            </li>
-<!--             
-
-            <li class="ui simple dropdown nav-item" style = "margin-top:2.5%">
-              회사 소개 <i class="dropdown icon"></i>
-              <div class="menu">
-                <a class="item" href="#">서비스 소개</a>
-                <a class="item" href="#"></a>
-                <a class="item" href="#">연락처</a>
-              </div>
-            </li> -->
-            
-             <div class="nav-item text-gray-e dropdown mt-1 "> 
-              <a class="nav-link dropdown-toggle text-gray-e" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">로그인</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdown10">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-
-          </ul>
+    #container2
+    {
+        overflow:hidden;
+        
+    }
     
+    #fancy_h1_wrap
+    {
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:100%;
+    }
+    </style>
+</head>
+
+
+<body class="d-flex flex-column h-100" >
+  <!-- Header -->
+  <div data-include="header"></div>
+  
+  <main role="main" class="flex-shrink-0 mt-5">
+    <div class="container" >
+
+
+      <div class = "row full-height">
+        <!-- 추천 종목 -->
+        <div class = "col-11 col-lg-6">
+          <div class="ui yellow segment" style = "height:80vh;">          
+            <div class="example3">
+              <h3>종목명 : 오키도키</br>
+                종목가 :300</br>
+                급등율 : 13</br>
+              </br>
+                종목명 : 오키도키</br>
+                종목가 :300</br>
+                급등율 : 13</br>
+              </br>
+                종목명 : 오키도키
+                종목가 :300
+                급등율 : 13             
+               
+                 </h3>
+              </div>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    
+        <!-- 1 오호! 박 하수, 오래간만이야! 반가워! 요즘도 주식투자 때문에 골머리 앓아? 잘 돼?
+
+2 최 선배, 요즘 주식 투자가 본업이라고 소문이 자자 하대? 난 잘 해야 늘 본전치기야. 손해 볼 때가 더 많아 죽겠어. 비법 좀 알려줘. 한잔 거하게 쏠 게. ㅎㅎ 그럼 뭣 부터 어떻게 시작 해야해?
+3주식투자에 왕도가 어디 있나? 스스로 실력을 키워야지. 흔히 얘기하길 행운이 따라야 주식 대박 난다고 하지만, 사실 운도 실력이 있는 사람에게 잘 따르지.
+
+4 주식투자 경험 또한 매우 중요해서 과거의 경험 학습을 이용해 미래를 예측 한다고 하는데 사실 주식시장과 정보가 너무 방대해서 절대 쉬운 일이 아니지.
+
+5 그래서 주식 애널리스트, 재야 고수라고 하는 사람들 따라서 같이 움직여 보지만 이미 알다시피 만족스런 결과는 그다지 기대하기 힘들지.
 
 
-    <main role="main" class="flex-shrink-0 mt-5">
-      <div class="container mt-5">
-      
-     
+ -->
 
-        <div class ="row justify-content-center my-5 py-5">
-            <div class ="col-lg-5 col-11">
-                <h1 class = "text-yellow-e">EGLEO STOCK DB의 세계와 가치-1</h1>
-                <h3 style = "line-height: 2.5rem;">
-                    아직도 인터넷 주식 커뮤니티나 증권사 찌라시에 의존 하십니까? <br />값비싸고 허무맹랑한 종목 추천 서비스에 울고 웃고 계십니까? <br /> 주식 전문 방송, 유투브 등 주변에는 우리의 팔랑귀를 혹하게 자극하는 것들로 가득합니다. <br />
-                    결론은 이미 타인이 인지한 정보로 또는 공시 게재한 정보로 주식투자 의사결정을 한다면 절대 수익을 장담 할 수 없습니다.<br />
-현재 이와 같다면 안타깝게도 당신은 절대로 성공적인 주식투자를 경험 할 수 없습니다.    
-                </h3>
-            </div>
-            <div class ="col-lg-5 col-11">
-                <img src = "images/service-1.png" width ="100%">
-            </div>
-        </div>
+        <!-- 홍보 삽화1 -->
+        <div class = "col-11 col-lg-6 full-height">    
+          <div class="ui yellow segment" style = "height:30vh;">  
+          <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false" style = "height:100%;">
 
-        <div class ="row justify-content-center my-5 py-5">
-            <div class ="col-lg-5 col-11">
-                <img src = "images/service-2.png" width ="100%">
-            </div>
-            
-            <div class ="col-lg-5 col-11">
-                <h1 class = "text-yellow-e">EGLEO STOCK DB의 세계와 가치-2</h1>
-                <h2>
-                    EGLEO STOCK DB는 방대한 주식데이터를 “일목요연”하게 정리해 드립니다!
-                </h2>
-                <h3 style = "line-height: 2.5rem;">
-                    주식투자에 필요한 데이터는 실로 방대하기 그지 없습니다.그 방대한 데이터 중 서로 영양가 높은 데이터를 선별해 내는 것 또한 매우 어려운 작업입니다. <br />
-                    EGLEO STOCK DB는 30년 이상 경력의  주식투자 전문가가 추려 놓은 데이터 항목을 바탕으로 다양한 고급 검색기능(조건/비교/교차)을 활용, 다채로운 시뮬레이션을 실행함으로써 자신만의 주식투자 포트폴리오를 만들 수 있게 하여 성공적인 주식 투자가로써의 역량을 길러 드립니다. <br />
-                    이제 날카로운 통찰력과 소신 있는 주관으로 “윤택한 투자가”가 되어 보세요.  
-                      
-                </h3>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pros1.png" alt="Los Angeles" class = "ad-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>h1</h5>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="logo.png" alt="Chicago">
+              </div>
+              <div class="carousel-item">
+                <img src="ny.jpg" alt="New York">
+              </div>
             </div>
           
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>          
+          </div>
         </div>
+       
 
+        <div class = "row full-height">
+        <div class = "col">
+          <div class="ui yellow segment" style = "height:30vh;">  
+          <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false" style = "height:100%;">
 
-        <div class ="row justify-content-center my-5 py-5">
-            <div class ="col-lg-5 col-11">
-                <h1 class = "text-yellow-e">EGLEO STOCK DB의 세계와 가치-3</h1>
-                <h2> EGLEO STOCK DB는 자기주도학습을 통해 주식의 고수로 만들어 드립니다!</h2>
-                <h3 style = "line-height: 2rem;">
-                   
-                    주식투자 시장은 누구에게나 열려 있습니다.<br />
-                    하지만 뛰어드는 누구에게나 성공을 가져다 주지 않습니다. 주식투자의 고수는 자기만의 비법이 있기에 “주식의 고수”라는 칭호를 얻은 것 입니다. <br />
-                    엄청나게 방대한 주식 정보 홍수 속에서 자기만의 비법 정보를 가려 뽑아 낼 수 있는 것이 고수로 가는 지름길 입니다.<br />
-                    그럼 지금 자신만의 비법 정보를 가려 뽑아 낼 수 있는 방법(틀)을 가지고 계신가요?<br />
-                    EGLEO STOCK DB는 그 방법(틀)을 제공 해 드립니다.<br />
-                    그 틀 위에 나만의 비법 책략을 세워 “주식의 고수”가 되어 보세요.<br />   
-                       
-                </h3>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pros1.png" alt="Los Angeles" class = "ad-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>h1</h5>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="logo.png" alt="Chicago">
+                <h5>h1</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img src="ny.jpg" alt="New York">
+              </div>
             </div>
-            <div class ="col-lg-5 col-11">
-                <img src = "images/service-3.png" width ="110%">
-            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>          
+          </div>
         </div>
+        </div>
+      </div> 
+    </div>    
+  </main>
 
-
+ 
+  <div class="ui inverted vertical footer segment footer mt-auto py-3">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact Us</a>
+            <a href="#" class="item">Religious Ceremonies</a>
+            <a href="#" class="item">Gazebo Plans</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Banana Pre-Order</a>
+            <a href="#" class="item">DNA FAQ</a>
+            <a href="#" class="item">How To Access</a>
+            <a href="#" class="item">Favorite X-Men</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        </div>
       </div>
-    </main>
-    
-    <footer class="footer mt-auto py-3">
-      <div class="container">
-        <span class="text-muted">이글레오 2021</span>
-      </div>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+    </div>
+  </div>
+<script>
+  
 
+function fun(){
+$('#fancy_h1_wrap').css('top', '');
+$('#fancy_h1_wrap').animate({top:"-100%"}, 5000, fun);
+}
 
+// $(document).ready(function(){
+//      $('#container2').animate({scrollTop: 156}, 800); 
+// });
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-  crossorigin="anonymous"></script>
-
+fun();
+</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
