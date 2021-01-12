@@ -140,3 +140,26 @@ a{color: lightgray;
 .ad-img{
   height: -webkit-fill-available;
 }
+
+@media only screen and (max-width: 992px){
+ .row{
+  margin-left:1% !important;
+  margin-right: 1% !important;
+  /* max-width: none !important; */
+} 
+}
+
+.full-width{
+  width:100%;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+/* .btn-check {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+} */
