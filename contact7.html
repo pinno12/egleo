@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="h-100" lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="주식, db, 이글레오" />
+    <meta name="author" content="임한석, 서천일" />
+    <meta name="generator" content="Jekyll v4.1.1" />
+    <meta property="og:title" content="주식 DB" />
+    <meta property="og:description" content="다양하게 분석하는 주식 DB" />
+    <meta property="og:image" content="images/logo.png" />
+    <title>기존</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Header -->
+    <div data-include="header"></div>
+
+    <main role="main" class="flex-shrink-0 mt-5">
+        <div class="container">
+
+            <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center bg-e">
+                <h1 class="display-5">EGLEO의 STOCK DB 세계와 사용법(예시)</h1>
+                <p class="lead">EGLEO의 STOCK DB는 방대한 주식데이터의 보고입니다. <br />
+                    STOCK DB의 세계를 지금 체험해 보세요!
+                </p>
+                <p>
+                    <a href="#" class="btn btn-secondary my-2">STOCK DB 예제 보기</a>
+                </p>
+            </div>
+
+
+            <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">STOCK DB 플랫폼</h1>
+                <p class="lead">“Based on Big Data Technology”</p>
+            </div>
+
+            <div class="ui three stackable cards">
+
+                <div class="card service" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="clipboard check icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"> <a href="/today/main">일별종목지표 </a></div>
+                        <div class="description">
+                            특징주, 상승/하락, 시초가갭, 최고가/최저가, 거래량 급등/급감
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card service" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="file alternate  icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"> <a href="/upjong/rising_most">업종분석 </a></div>
+                        <div class="description">
+                            업종별 요약, 업종별 주가변동
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card service" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="laptop icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"> <a href="/basic/rising_falling">기본분석</a></div>
+                        <div class="description">
+                            종복정보, 기간 상승/하락, 기간 주가변동, 신용/공매도, 투자자 변동
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card service" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="won sign icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"> <a href="/finance/year">재무분석</a></div>
+                        <div class="description">
+                            연재무지표 변동, 분기 재무지표 변동
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card service" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="bell icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"> <a href="/sma/ma5_20">이동평균선분석</a></div>
+                        <div class="description">
+                            일봉 돌파, 주봉 돌파, 수렴상태에서 이평선 돌파
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card service" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="chart line icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"><a href="/secondary/macd_plus">보조지표분석</a></div>
+                        <div class="description">
+                            투자심리선, 이평선 이격률, 체결강도
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="chart pie icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"><a href="/advance/rising_ndays_min">고급분석</a></div>
+                        <div class="description">
+                            패턴분석, 기간별 주가 변동, 기간별 상승/하락후 양봉/음봉 출현
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card" style=" box-shadow: none;
+            -webkit-box-shadow:none;">
+                    <div class="text-center" style="padding-top:30%">
+                        <i class="table icon circle-icon" style="font-size: 5rem"></i>
+                    </div>
+                    <div class="content text-center" style=" border-top:none;">
+                        <div class="header"><a href="/simulation/basic/rising_falling">황금 개미
+                                [종목 추출 시뮬레이터]
+                            </a></div>
+                        <div class="description">
+                            특정 일자, 특정 조건 주가 흐름 시뮬레이션
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto my-5 bg-e  text-center">
+                <h2 class="display-5">연락처 </h2>
+                <p class="lead">궁금한 사항은 아래 회사 대표전화번호 또는 이메일을 통해 문의 바랍니다.</p>
+
+
+                <div class="row my-5">
+                    <div class="col-lg-5 offset-lg-1 text-left">
+                        <img src="images/logo-m.png" width="80%" class="my-3">
+
+                        <div class="row">
+                            <div class="col-lg-3 text-left">
+                                <div class=" ui inverted link list" style="text-align: left;">
+                                    <span class="item text-white ">Tel</span>
+                                    <span class="item text-white ">Fax</span>
+                                    <span class="item text-white ">E-mail</span>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9 text-left">
+                                <div class="ui inverted link list" style="text-align: left;">
+                                    <span class="item text-white ">1811-6793</span>
+                                    <span class="item text-white ">031-388-1172</span>
+                                    <span class="item text-white "><a
+                                            href="mailto:egleo2018@gmail.com">egleo2018@gmail.com</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control" id="cust_name" name="cust_name" placeholder="이름" type="text"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="cust_email" name="cust_email" placeholder="이메일" type="email"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="cust_content" name="cust_content" placeholder="코멘트"
+                                rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input class="ui button" type="button" id="contact_submit" value="남기기">
+                        </div>
+
+                        <p class="text-left">
+                            *㈜이글레오FT에서 제공하는 정보 서비스는 투자행위를 위한 도움 및 참고를 목적으로 하고 있으며, 서비스 활용에 따른 최종 결정 및 책임은 투자자 본인에게 있음을
+                            반드시
+                            유념하시기 바랍니다.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="ui inverted vertical footer segment footer mt-auto py-3">
+        <div class="ui container">
+            <div class="row text-center">
+                <div class="container-fluid">
+                    <small>(주)이글레오에프티 | 경기도 안양시 관양동 1591 평촌아크로타워 B동 2109호 | 사업자등록번호: 611-87-00868 | 대표: 서천일 </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

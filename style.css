@@ -60,9 +60,9 @@
 }
 
 a:hover {
-  background-color:#FFB81C ;
+  /* background-color:#FFB81C ; */
   text-decoration: underline;
-  color:#63666A;;
+  color:#63666A !important;
 }
 
 .nav-item{
@@ -163,3 +163,72 @@ a{color: lightgray;
   clip: rect(0,0,0,0);
   pointer-events: none;
 } */
+
+::selection {
+  color: #63666A;
+  background:#FFB81C ;
+}
+
+.ui.button.items{
+  height:30vh;
+  line-height:7rem;
+  background:whitesmoke;
+  border-radius: 2rem;
+}
+
+.ui.button.items:hover{
+  background:#FFB81C;
+}
+
+.service{
+  border-top:none;
+}
+
+.circle-icon{
+  background: #63666A;
+  color: #FFB81C;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.carousel-control-next, .carousel-control-prev{
+  color:black;
+  opacity:1;
+}
+
+.carousel-indicators li{
+  background-color:gray;
+}

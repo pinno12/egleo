@@ -51,18 +51,7 @@
       <div class = "row justify-content-center my-5">
         <h1>멤버십만으로 모든 것을 누리세요!</h1>
       </div>
-      <div class="ui circular segment">
-        <h2 class="ui header">
-          Buy Now
-          <div class="sub header">$10.99</div>
-        </h2>
-      </div>
-      <div class="ui inverted circular segment">
-        <h2 class="ui inverted header">
-          Buy Now
-          <div class="sub header">$10.99</div>
-        </h2>
-      </div>
+    
       <div class="row">
         <div class="col-11 col-lg-6">
           <h1 class="ui header">결제 방법을 선택하세요 <span class="small text-muted" style="font-size:0.8rem;"></span></h1>
@@ -72,26 +61,25 @@
         </div>
       </div>
       <div class="ui divider"></div>
-
-      <div class = "row">
-        
+  
+      <div class = "row my-5">        
           <div class="col-lg-3 col-11">
           
-            <button class="ui grey button full-width">
-              실버(Silver) <br />
+            <button class="ui button full-width items" onclick="bg_change($(this).attr('id'))"  id="실버" style = "border-bottom:10px double silver;">
+              <h2 class = "items-name">실버(Silver)</h2>
               ￦1,100,000/3개월
             </button>
           </div>
 
           <div class="col-lg-3 col-11">
-            <button class="ui yellow button full-width">
+            <button class="ui button full-width items"  onclick="bg_change($(this).attr('id'))"  id="골드" style = "border-bottom:10px double gold;">
               골드(Gold) <br />
               ￦2,200,000/6개월
             </button>
           </div>
 
           <div class="col-lg-3 col-11">
-            <button class="ui black button full-width">
+            <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="프리미엄" style = "border-bottom:10px double black;">
               프리미엄(Premium) <br />
               ￦3,850,000/ <span class = "text-small">12개월</span>
             </button>
@@ -99,17 +87,16 @@
         
           
           <div class="col-lg-3 col-11">
-            <button class="ui blue button full-width">
-              테일러(Tailor)SVC
- <br />
+            <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="테일러" style = "border-bottom:10px double purple;">
+              테일러(Tailor)SVC <br />
  ￦550,000/건/월
             </button>
           </div>       
       </div>
 
-      <div class="ui secondary segment">
+      <div class="ui secondary segment my-5">
         <p>
-         특전 혜택
+         <h2 id = "item-name"></h2>특전 혜택
          <ul>
           <li>무료체험 서비스(7일간) : 실버/골드/프리미엄 고객 (테일러 SVC는 제외)</li>
           <li>실시간 급등 주식 종목 SMS 알림 서비스 :  실버/골드/프리미엄 고객 (테일러 SVC는 제외</li>
@@ -121,7 +108,7 @@
         </div>
         <div class="collapse" id="collapseExample">
           <div class="ui yellow segment">
-            <h1><span>골드 상품의 </span>결제 수단을 선택하세요</h1>
+            <h1><span id = "item-name2">실버</span> 상품의 결제 수단을 선택하세요</h1>
             <div class="ui form">
               <div class="two fields">
                 <div class="field">
@@ -164,7 +151,7 @@
         </div>
       </div>
 
-      <div class="ui tertiary segment">
+      <div class="ui tertiary segment my-5">
         멤버십 구매 시 참고하세요.<br/>       
 취소 및 환불 규정 
 
