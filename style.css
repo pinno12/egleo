@@ -1,162 +1,194 @@
 .ui.menu .item img.logo {
-  margin-right: 1.5em;
+    margin-right: 1.5em;
 }
+
 .main.container {
-  margin-top: 7em;
+    margin-top: 7em;
 }
+
 .wireframe {
-  margin-top: 2em;
+    margin-top: 2em;
 }
+
 .ui.footer.segment {
-  margin: 5em 0em 0em;
-  padding: 5em 0em;
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
 }
-.t{
-   -webkit-text-decoration-line: line-through; /* Safari */
-   text-decoration-line: line-through; 
+
+.t {
+    -webkit-text-decoration-line: line-through;
+    /* Safari */
+    text-decoration-line: line-through;
 }
-    .text-gray-e{
-      color:#63666A;
-    }
 
-    .text-yellow-e{
-        color:#FFB81C !important;
-    }
+.text-gray-e {
+    color: #63666A;
+}
 
-    .bg-e{
-     background-color:#FFB81C !important;
-    }
-    
+.text-yellow-e {
+    color: #FFB81C !important;
+}
 
+.bg-e {
+    background-color: #FFB81C !important;
+}
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
         font-size: 3.5rem;
-      }
     }
+}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Noto Sans KR", Georgia, "Times New Roman", serif;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Sans KR", Georgia, "Times New Roman", serif;
+}
 
-  
 .nav-scroller {
-  position: relative; 
-  overflow-y: hidden;
-  overflow-x: hidden;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 a:hover {
-  /* background-color:#FFB81C ; */
-  text-decoration: underline;
-  color:#63666A !important;
+    /* background-color:#FFB81C ; */
+    text-decoration: underline;
+    color: #63666A !important;
 }
 
-.nav-item{
-  margin-right: 5rem;
-  color:#63666A;
+.nav-item {
+    margin-right: 5rem;
+    color: #63666A;
 }
 
-.nav-link{
-  font-weight:600;
+.nav-link {
+    font-weight: 600;
 }
+
 
 /* .ui.list .list>.item, .ui.list>.item, ol.ui.list li, ul.ui.list li {
   line-height: 4rem;
 } */
 
-#main{
-  background-image: url("images/join.png");
+#main {
+    background-image: url("images/join.png");
 }
 
-a{color: lightgray;
-/* text-decoration:underline; */
-
+a {
+    color: lightgray;
+    /* text-decoration:underline; */
 }
 
-.full-height{height:100%;}
+.full-height {
+    height: 100%;
+}
 
 .example3 {
- height: 100%;	
- overflow: hidden;
- position: relative;
+    height: 93%;
+    overflow: hidden;
+    position: relative;
 }
+
 .example3 table {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateY(-100%);
- -webkit-transform:translateY(-100%);	
- transform:translateY(-100%);
- /* Apply animation to this element */	
- -moz-animation: example3 15s linear infinite;
- -webkit-animation: example3 15s linear infinite;
- animation: example3 15s linear infinite;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    /* Apply animation to this element */
+    -moz-animation: example3 15s linear infinite;
+    -webkit-animation: example3 15s linear infinite;
+    animation: example3 15s linear infinite;
 }
+
+
 /* Move it (define the animation) */
+
 @-moz-keyframes example3 {
- 0%   { -moz-transform: translateY(-100%); }
- 100% { -moz-transform: translateY(100%); }
+    0% {
+        -moz-transform: translateY(-100%);
+    }
+    100% {
+        -moz-transform: translateY(100%);
+    }
 }
+
 @-webkit-keyframes example3 {
- 0%   { -webkit-transform: translateY(-100%); }
- 100% { -webkit-transform: translateY(100%); }
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(100%);
+    }
 }
+
 @keyframes example3 {
- 0%   { 
- -moz-transform: translateY(-100%); /* Firefox bug fix */
- -webkit-transform: translateY(-100%); /* Firefox bug fix */
- transform: translateY(-100%); 		
- }
- 100% { 
- -moz-transform: translateY(100%); /* Firefox bug fix */
- -webkit-transform: translateY(100%); /* Firefox bug fix */
- transform: translateY(100%); 
- }
+    0% {
+        -moz-transform: translateY(-100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateY(-100%);
+        /* Firefox bug fix */
+        transform: translateY(-100%);
+    }
+    100% {
+        -moz-transform: translateY(100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateY(100%);
+        /* Firefox bug fix */
+        transform: translateY(100%);
+    }
 }
+
 
 /* INDEX */
-.carousel-inner{
-  height: 100%;
+
+.carousel-inner {
+    height: 100%;
 }
 
-.ad-img{
-  height: -webkit-fill-available;
+.ad-img {
+    height: -webkit-fill-available;
 }
 
-@media only screen and (max-width: 992px){
- .row{
-  margin-left:1% !important;
-  margin-right: 1% !important;
-  /* max-width: none !important; */
-} 
+@media only screen and (max-width: 992px) {
+    .row {
+        margin-left: 1% !important;
+        margin-right: 1% !important;
+        /* max-width: none !important; */
+    }
+    .carousel-item>img {
+        height: 30% !important;
+    }
+    .example3 {
+        height: 83%;
+    }
 }
 
-.full-width{
-  width:100%;
+.full-width {
+    width: 100%;
 }
 
-.form-group{
-  display: flex;
-  flex-direction: column;
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* .btn-check {
   position: absolute;
@@ -165,74 +197,80 @@ a{color: lightgray;
 } */
 
 ::selection {
-  color: #63666A;
-  background:#FFB81C ;
+    color: #63666A;
+    background: #FFB81C;
 }
 
-.ui.button.items{
-  height:30vh;
-  line-height:7rem;
-  background:whitesmoke;
-  border-radius: 2rem;
+.ui.button.items {
+    height: 30vh;
+    line-height: 7rem;
+    background: whitesmoke;
+    border-radius: 2rem;
 }
 
-.ui.button.items:hover{
-  background:#FFB81C;
+.ui.button.items:hover {
+    background: #FFB81C;
 }
 
-.service{
-  border-top:none;
+.service {
+    border-top: none;
 }
 
-.circle-icon{
-  background: #63666A;
-  color: #FFB81C;
+.circle-icon {
+    background: #63666A;
+    color: #FFB81C;
 }
 
 .carousel-item {
-  height: 100%;
+    height: 100%;
 }
-.carousel-item > img {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  /* min-width: 100%; */
-  height: 17rem;
+
+.carousel-item>img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    /* min-width: 100%; */
+    height: 17rem;
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-.carousel-control-next, .carousel-control-prev{
-  color:black;
-  opacity:1;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 
-.carousel-indicators li{
-  background-color:gray;
+.carousel-control-next,
+.carousel-control-prev {
+    color: black;
+    opacity: 1;
 }
 
-.ui.table td{
-  line-height:2rem;
+.carousel-indicators li {
+    background-color: gray;
+}
+
+.ui.table td {
+    line-height: 2rem;
+}
+
+.accordion-button:focus{
+    border-color: #FFB81C;
+    box-shadow:none;
 }

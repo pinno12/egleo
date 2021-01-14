@@ -9,7 +9,7 @@
   <meta name="generator" content="Jekyll v4.1.1" />
   <meta property="og:title" content="주식 DB" />
   <meta property="og:description" content="다양하게 분석하는 주식 DB" />
-  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:image" content="images/thumbnail.png" />
   
   <title>서비스 구매 결제</title>
 
@@ -44,7 +44,67 @@
 
 <body class="d-flex flex-column h-100"  >
   <!-- Header -->
-  <div data-include="header"></div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu bg-e"
+      aria-label="Twelfth navbar example">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10" style="height:2rem;">
+          <ul class="navbar-nav  d-flex justify-content-between" style="width:100%">
+            <li class="nav-item">
+              <a href="./index.html" class="header nav-link text-gray-e"><img class="logo" src="images/logo.png"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./service.html" style="margin-top: 0.3rem;">서비스 소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./company.html" style="margin-top: 0.3rem;">회사 소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">솔루션 서비스 차별화 비교</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">연락</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">구독하기</a>
+            </li>
+            <div class="nav-item text-gray-e dropdown mt-1 ">
+              <a class="nav-link dropdown-toggle text-gray-e" href="#" id="dropdown10" data-bs-toggle="dropdown"
+                aria-expanded="false">로그인</a>
+              <ul class="dropdown-menu justify-content-center text-center" aria-labelledby="dropdown10"
+                style="min-width: max-content;">
+  
+                <form class="ui form my-3 mx-3">
+                  <div class="field">
+                    <label class="float-left">이메일 ID</label>
+                    <input type="text" name="first-name" placeholder="">
+                  </div>
+                  <div class="field">
+                    <label class="float-left">비밀 번호</label>
+                    <input type="text" name="last-name" placeholder="">
+                  </div>
+  
+                  <button class="ui yellow button " type="submit">로그인</button> <br />
+                  <button class="ui button tool-tip my-3" type="submit"
+                    data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
+                  <div class="ul list text-center"
+                    style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
+                    <a href="./join.html">회원 가입</a><br>
+                    <a href="#">ID/비밀번호 찾기</a>
+                  </div>
+                </form>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   
   <main role="main" class="flex-shrink-0 mt-5">    
     <div class="container">
@@ -99,7 +159,7 @@
          <h2 id = "item-name"></h2>특전 혜택
          <ul>
           <li>무료체험 서비스(7일간) : 실버/골드/프리미엄 고객 (테일러 SVC는 제외)</li>
-          <li>실시간 급등 주식 종목 SMS 알림 서비스 :  실버/골드/프리미엄 고객 (테일러 SVC는 제외</li>
+          <li>실시간 급등 주식 종목 SMS 알림 서비스 :  실버/골드/프리미엄 고객 (테일러 SVC는 제외)</li>
         </ul>
         </p>
 
@@ -122,9 +182,10 @@
               </div>
             </div>
             <div class="ui two top attached buttons">
-              <div class="ui grey basic button"> 현금 결제 :  ㈜이글레오에프티/00은행 <br />
+              <div class="ui  button" style = "background-color: #C1C6C6;"> 현금 결제 :  ㈜이글레오에프티/00은행 <br />
                 계좌  ooxxx-xxxxx-xxxxxxx로 입금 </div>
-              <div class="ui yellow basic button">  신용카드 결제 </div>
+              <div class="ui button" style="background-color: #d9d9d6;">
+                <a class = "text-dark" href = "./tailor8.html#t7">신용카드 결제</a></div>
           </div>
             <!-- <div class = "row">
               <div class ="col-lg-6 col-11">
@@ -143,15 +204,23 @@
               <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <button class="btn btn-primary me-md-2" type="button">취소</button>
                 
-              </div> -->
-
-            
-            
+              </div> -->        
           </div>
         </div>
       </div>
 
-      <div class="ui tertiary segment my-5">
+      <div class="row">
+        <div class="col">
+          <!-- url 바꿔야 함 -->
+          <h1 class="ui header"><a href = "./tailor8.html" target = "_blank"><i class = "suitcase icon"></i>테일러(Tailor)서비스란?</a></h1>
+        </div>
+      
+      </div>
+
+      <h4 class="ui horizontal divider header">
+        <i class="won sign icon"></i>   
+      </h4>
+      <div class=" my-5">
         멤버십 구매 시 참고하세요.<br/>       
 취소 및 환불 규정 
 
@@ -176,7 +245,15 @@
 
     </div>    
 </main>
-<div class="ui inverted vertical footer segment footer mt-auto py-3"></div>
+<div class="ui inverted vertical footer segment footer mt-auto py-3">
+  <div class="ui container">
+      <div class="row text-center">
+          <div class="container-fluid">
+              <small>(주)이글레오에프티 | 경기도 안양시 관양동 1591 평촌아크로타워 B동 2109호 | 사업자등록번호: 611-87-00868 | 대표: 서천일 </small>
+          </div>
+      </div>
+  </div>
+</div>
 
 
 
