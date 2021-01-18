@@ -86,7 +86,8 @@ a:hover {
 }
 
 a {
-    color: lightgray;
+    /* color: lightgray; */
+    color: #63666A;
     /* text-decoration:underline; */
 }
 

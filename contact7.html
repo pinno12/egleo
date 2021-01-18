@@ -18,9 +18,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
@@ -31,6 +32,47 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="./style.css" />
+
+
+<!-- Contact style -->
+<style>
+
+
+.input-field{
+    padding: 2rem 1rem 0 1rem !important;
+    /* height: 3.5rem !important; */
+}
+form,
+form > div{
+  position:relative;
+  margin-bottom:10px;
+}
+label {
+  position:absolute;
+  left: 5px;
+  top:7px;
+      -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+input {
+  height: 3.5rem;
+  width: 100%;
+  padding-left: 5px;
+  line-height: 30px;
+}
+
+label.focus {
+  font-size:10px;
+  top:2px;
+}
+label.has-value {
+  color:#FFB81C ;
+  top:2px;
+  font-size:0.8rem;
+}
+</style>
+
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -93,6 +135,7 @@
 
     <main role="main" class="flex-shrink-0 mt-5">
         <div class="container mt-5">
+
             <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto my-5 bg-e  text-center">
                 <h2 class="display-5">연락처 </h2>
                 <p class="lead">궁금한 사항은 아래 회사 대표전화번호 또는 이메일을 통해 문의 바랍니다.</p>
@@ -118,18 +161,27 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <input class="form-control" id="cust_name" name="cust_name" placeholder="이름" type="text" required="">
+
+                    <div class="col-lg-6 ">
+
+            <div class="wrapper">
+                <form class = "ui form">
+                    <div>
+                        
+                            <label>이름</label>
+                            <input class="input-field" type="text" required="">
                         </div>
-                        <div class="form-group">
-                            <input class="form-control" id="cust_email" name="cust_email" placeholder="이메일" type="email" required="">
+                        <div>
+                            <label>이메일</label>
+                            <input class="input-field" type="email" required="">
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="cust_content" name="cust_content" placeholder="코멘트" rows="2"></textarea>
+                        <div>
+                    <label>문의사항</label>
+                            <textarea class="input-field form-control" id="cust_content" name="cust_content" rows="3"></textarea>
                         </div>
-                        <div class="form-group">
-                            <input class="ui button" type="button" id="contact_submit" value="남기기">
+
+                            <input class="ui button" type="button" id="contact_submit" value="확인">
+                        </form>
                         </div>
                         <p class="text-left">
                             *㈜이글레오FT에서 제공하는 정보 서비스는 투자행위를 위한 도움 및 참고를 목적으로 하고 있으며, 서비스 활용에 따른 최종 결정 및 책임은 투자자 본인에게 있음을 반드시 유념하시기 바랍니다.
@@ -167,15 +219,15 @@
             </div>
 
             <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="display-4">STOCK DB 플랫폼</h1>
+                <h1 class="display-4 fw-bold">STOCK DB 플랫폼</h1>
                 <p class="lead">“Based on Big Data Technology”</p>
             </div>
 
             <div class="ui three stackable cards">
-                <div class="card service" style=" box-shadow: none;
+                <div class="card service justify-content-center" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="clipboard check icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-secondary bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="clipboard check icon text-white" style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
                         <div class="header"> <a href="/today/main">일별종목지표 </a></div>
@@ -185,23 +237,23 @@
                     </div>
                 </div>
 
-                <div class="card service" style=" box-shadow: none;
+                <div class="card service justify-content-center" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="file alternate  icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-warning bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="file alternate  icon text-white" style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
-                        <div class="header"> <a href="/upjong/rising_most">업종분석 </a></div>
+                        <div class="header"> <a href="/upjong/rising_most">업종분석</a></div>
                         <div class="description">
                             업종별 요약, 업종별 주가변동
                         </div>
                     </div>
                 </div>
 
-                <div class="card service" style=" box-shadow: none;
+                <div class="card service justify-content-center" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="laptop icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-danger bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="laptop icon text-white " style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
                         <div class="header"> <a href="/basic/rising_falling">기본분석</a></div>
@@ -211,10 +263,10 @@
                     </div>
                 </div>
 
-                <div class="card service" style=" box-shadow: none;
+                <div class="card service justify-content-center" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="won sign icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-light bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="won sign icon text-warning" style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
                         <div class="header"> <a href="/finance/year">재무분석</a></div>
@@ -225,10 +277,10 @@
                 </div>
 
 
-                <div class="card service" style=" box-shadow: none;
+                <div class="card service justify-content-center" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="bell icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-primary bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="bell icon text-light " style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
                         <div class="header"> <a href="/sma/ma5_20">이동평균선분석</a></div>
@@ -238,10 +290,10 @@
                     </div>
                 </div>
 
-                <div class="card service" style=" box-shadow: none;
+                <div class="card service justify-content-center" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="chart line icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-info bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="chart line icon text-white " style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
                         <div class="header"><a href="/secondary/macd_plus">보조지표분석</a></div>
@@ -253,22 +305,35 @@
 
                 <div class="card" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="chart pie icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-dark bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="chart pie icon text-white " style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
-                        <div class="header"><a href="/advance/rising_ndays_min">고급분석</a></div>
+                        <div class="header"><a href="/advance/rising_ndays_min">고급분석I</a></div>
                         <div class="description">
                             패턴분석, 기간별 주가 변동, 기간별 상승/하락후 양봉/음봉 출현
                         </div>
                     </div>
                 </div>
 
+                <div class="card" style=" box-shadow: none;
+                -webkit-box-shadow:none;">
+                        <div class="text-center bg-success bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                            <i class="chart area icon" style="font-size: 5rem"></i>
+                        </div>
+                        <div class="content text-center" style=" border-top:none;">
+                            <div class="header"><a href="/advance/rising_ndays_min">고급분석II</a></div>
+                            <div class="description">
+                                패턴분석, 기간별 주가 변동, 기간별 상승/하락후 양봉/음봉 출현
+                            </div>
+                        </div>
+                    </div>
+
 
                 <div class="card" style=" box-shadow: none;
             -webkit-box-shadow:none;">
-                    <div class="text-center" style="padding-top:30%">
-                        <i class="table icon circle-icon" style="font-size: 5rem"></i>
+                    <div class="text-center bg-warning bg-gradient col-4 mx-auto shadow pt-5" style="border-radius: 20% !important;">
+                        <i class="table icon text-white " style="font-size: 5rem"></i>
                     </div>
                     <div class="content text-center" style=" border-top:none;">
                         <div class="header"><a href="/simulation/basic/rising_falling">황금 개미
@@ -295,9 +360,50 @@
         </div>
     </div>
 
+<script>
+
+/*$('.input-field').on('focus', function(){
+  $(this).prev().addClass('focus');
+});
+$('.input-field').on('blur', function(){
+  $(this).prev().removeClass('focus');
+});
+
+if($('.input-field').val().addClass('focus'));*/
+
+
+$('.input-field').focus(function () {
+    $(this).prev().addClass('focus');
+    
+  
+  if($(this).val().length=='') {
+    $(this).prev().addClass('has-value');
+  }
+  
+  
+  
+    /*if($(this).val().length>0) {
+        $(this).prev().addClass('has-value');
+        console.log('Value exist');
+    }*/
+    
+  
+});
+$('.input-field').blur(function () {
+    $(this).prev().removeClass('focus');
+    if($(this).val() == 0) {
+      $(this).prev().removeClass('has-value');
+    }
+});
+
+
+
+
+
+</script>
 
     <!-- import the webpage's javascript file -->
-    <script src="./script.js" defer></script>s
+    <script src="./script.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
