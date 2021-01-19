@@ -66,16 +66,26 @@ a:hover {
     text-decoration: underline;
     color: #63666A !important;
 }
-
+.dropdown-menu[style]{
+    left: auto!important;
+}
 .nav-item {
-    margin-right: 5rem;
-    color: #63666A;
+    /* margin-right: 5rem;
+    color: #63666A; */
 }
 
 .nav-link {
     font-weight: 600;
 }
 
+ a.nav-link:hover {
+    border-bottom:6px solid black !important;
+    color:rgba(0,0,0,.5);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: lightgray;
+}
 
 /* .ui.list .list>.item, .ui.list>.item, ol.ui.list li, ul.ui.list li {
   line-height: 4rem;
@@ -86,7 +96,8 @@ a:hover {
 }
 
 a {
-    color: lightgray;
+    /* color: lightgray; */
+    color: #63666A;
     /* text-decoration:underline; */
 }
 
@@ -167,11 +178,16 @@ a {
 }
 
 @media only screen and (max-width: 992px) {
-    .row {
-        margin-left: 1% !important;
-        margin-right: 1% !important;
-        /* max-width: none !important; */
+    
+    .nav-link{
+        margin-top:0;
+        margin-bottom:0;
+        padding-top:0;
+        padding-bottom: 0;
     }
+    
+
+
     .carousel-item>img {
         height: 30% !important;
     }

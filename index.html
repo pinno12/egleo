@@ -13,13 +13,25 @@
     <title>이글레오에 오신 걸 환영합니다</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap"
+        rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
+<!-- index font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -34,12 +46,16 @@
 
 
 
-
+    <!-- index page style -->
     <style>
         #container2 {
             overflow: hidden;
         }
-        
+ body{
+     overflow-y: auto;
+ }
+
+
         #fancy_h1_wrap {
             display: block;
             width: 100%;
@@ -53,36 +69,51 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu bg-e" aria-label="Twelfth navbar example">
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu p-2"
+            aria-label="Twelfth navbar example">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
 
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10" style="height:2rem;">
-                    <ul class="navbar-nav  d-flex justify-content-between" style="width:100%">
-                        <li class="nav-item">
-                            <a href="./index.html" class="header nav-link text-gray-e"><img class="logo" src="images/logo.png"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./service.html" style="margin-top: 0.3rem;">서비스 소개</a>
+
+                </button>
+                <span class="d-block d-sm-none"> 
+                    <a href="./index.html" class="header nav-link text-gray-e"><img
+                            class="logo" src="images/logo.png"></a></span>
+
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10"
+                    style="height:2rem;">
+                    <ul class="navbar-nav  d-flex justify-content-between" >
+                        <li class="nav-item d-none d-sm-block">
+                            <a href="./index.html" class="header nav-link text-gray-e"><img class="logo"
+                                    src="images/logo.png"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./company.html" style="margin-top: 0.3rem;">회사 소개</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">솔루션 서비스 차별화 비교</a>
+                            <a class="nav-link" href="./service.html" style="margin-top: 0.3rem;">서비스 소개</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">연락</a>
+                            <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">EGLEO DB 플랫폼</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">구독하기</a>
+                            <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">고객센터</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">상품안내</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./example.html" style="margin-top: 0.3rem;">플랫폼 사용법(예제)</a>
                         </li>
                         <div class="nav-item text-gray-e dropdown mt-1 ">
-                            <a class="nav-link dropdown-toggle text-gray-e" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">로그인</a>
-                            <ul class="dropdown-menu justify-content-center text-center" aria-labelledby="dropdown10" style="min-width: max-content;">
+                            <a class="nav-link dropdown-toggle text-gray-e" href="#" id="dropdown10"
+                                data-bs-toggle="dropdown" aria-expanded="false">로그인</a>
+                            <ul class="dropdown-menu justify-content-center text-center" aria-labelledby="dropdown10"
+                                style="min-width: max-content;">
 
                                 <form class="ui form my-3 mx-3">
                                     <div class="field">
@@ -95,8 +126,10 @@
                                     </div>
 
                                     <button class="ui yellow button " type="submit">로그인</button> <br />
-                                    <button class="ui button tool-tip my-3" type="submit" data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
-                                    <div class="ul list text-center" style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
+                                    <button class="ui button tool-tip my-3" type="submit"
+                                        data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
+                                    <div class="ul list text-center"
+                                        style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
                                         <a href="./join.html">회원 가입</a><br>
                                         <a href="#">ID/비밀번호 찾기</a>
                                     </div>
@@ -109,25 +142,26 @@
         </nav>
     </header>
 
-    <main role="main" class="flex-shrink-0 mt-5">
-        <div class="container">
+    <main role="main" class="flex-shrink-0 mt-5 " style="background-color:  rgba(255, 184, 28,0.9); ">
+        <!-- or rgba(255, 184, 28,0.9) -->
+        <div class="container mt-4">
             <div class="row full-height mt-3">
                 <!-- 추천 종목 -->
-                <div class="col-11 col-lg-6">
+                <div class="col-lg-6 p-0">
                     <div class="row">
                         <div class="col">
                             <!-- url 바꿔야 함 -->
-                            <h1 class="ui header"><a href="http://www.stockdb.co.kr/today/summary">이글레오 추천</a></h1>
+                            <h1 class="ui header" ><a href="http://www.stockdb.co.kr/today/summary">🦅실시간 급변동주</a></h1>
                         </div>
                         <!-- <div class="col">
               <div class="ui secondary button float-right"><a href="./ad.html" target="_blank">더보기></a></div>
             </div> -->
                     </div>
-                    <div class="ui yellow segment " style="height:65rem;">
+                    <div class="ui red segment " style="height:65rem;">
 
-                        <table class="ui table">
+                        <table class="table  table-sm">
                             <thead>
-                                <tr>
+                                <tr class  ="text-center">
                                     <th>날짜</th>
                                     <th>종목</th>
                                     <th>종가</th>
@@ -140,21 +174,12 @@
                         <div class="example3">
 
 
-                            <table class="ui table">
-                                <!-- <thead>
-                  <tr>
-                    <th>날짜</th>
-                    <th>종목</th>
-                    <th>종가</th>
-                    <th>거래량</th>
-                  </tr>
-                </thead> -->
+                            <table class="table  table-sm">
+                 
                                 <tbody>
-
-
                                     <tr>
                                         <td>2021-01-13</td>
-                                        <td><a href="#" onclick="javascript:openNaver('042000')">카페24</a>
+                                        <td><a href="#" onclick="javascript:openNaver('042000')">카페24</span>
 
                                         </td>
                                         <td>81,100</td>
@@ -251,44 +276,46 @@
                 </div>
 
                 <!-- 홍보 삽화1 -->
-                <div class="col-11 col-lg-6 full-height">
+                <div class=" col-lg-6 full-height">
                     <div class="row">
                         <div class="col">
-                            <h3 class="ui header mt-2"><a href="./ad.html" target="_blank">똑똑하게 주식하기</a><small> Cartoon</small></h1>
+                            <h3 class="ui header mt-2"><a href="./ad.html" target="_blank">📔슬기로운 주식생활</a><small>
+                                    Cartoon</small></h1>
                         </div>
-                        <!-- <div class="col">
-              <div class="mini ui secondary basic button float-right"><a href="./ad.html" target="_blank">더보기></a></div>
-            </div> -->
+                       
                     </div>
 
-                    <div id="myCarousel" class="ui yellow segment carousel slide" data-ride="carousel" data-interval="false" style="height:30rem;">
+                    <div id="myCarousel" class="ui black segment carousel slide " data-ride="carousel"
+                        data-interval="false" style="height:30rem;">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1" class=""></li>
                             <li data-target="#myCarousel" data-slide-to="2" class=""></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item active text-center">
+                            <div class="carousel-item bg-white active text-center">
                                 <img src="images/ad/1.png" style="min-width:30%; height: 54%;" class="text-center mt-5">
                                 <div class="container">
-                                    <div class="carousel-caption text-left text-dark pb-5">
+                                    <div class="carousel-caption text-center text-dark pb-5">
                                         <p>오호! 박 하수, 오래간만이야! 반가워!<br /> 요즘도 주식투자 때문에 골머리 앓아? <br />잘 돼?</p>
                                         <!-- <p><a class="ui button" href="#" role="button">더보기</a></p> -->
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="carousel-item text-center">
+                            <div class="carousel-item bg-white text-center">
                                 <img src="images/ad/11.png" style="height: 70%;">
                                 <div class="carousel-caption text-center text-dark">
-                                    <p> 최 선배, 요즘 주식 투자가 본업이라고 소문이 자자 하대? <br /> 난 잘 해야 늘 본전치기야. 손해 볼 때가 더 많아 죽겠어.<br /> 비법 좀 알려줘. 한잔 거하게 쏠 게. ㅎㅎ 그럼 뭐부터 어떻게 시작 해야해?</p>
+                                    <p> 최 선배, 요즘 주식 투자가 본업이라고 소문이 자자 하대? <br /> 난 잘 해야 늘 본전치기야. 손해 볼 때가 더 많아 죽겠어.<br />
+                                        비법 좀 알려줘. 한잔 거하게 쏠 게. ㅎㅎ 그럼 뭐부터 어떻게 시작 해야해?</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item bg-white">
                                 <img src="images/ad/3.png" style="height: 17rem;">
                                 <div class="container">
                                     <div class="carousel-caption text-right text-dark">
-                                        <p>주식투자에 왕도가 어디 있나? 스스로 실력을 키워야지. 흔히 얘기하길 행운이 따라야 주식 대박 난다고 하지만, 사실 운도 실력이 있는 사람에게 잘 따르지.</p>
+                                        <p>주식투자에 왕도가 어디 있나? 스스로 실력을 키워야지. 흔히 얘기하길 행운이 따라야 주식 대박 난다고 하지만, 사실 운도 실력이 있는
+                                            사람에게 잘 따르지.</p>
                                         <p><a class="ui button" href="./ad.html" role="button">더보기</a></p>
                                     </div>
                                 </div>
@@ -309,21 +336,24 @@
                     <div class="row full-height">
                         <div class="col">
                             <div class="row">
-                                <div class="col">
-                                    <h3 class="ui header mt-3"><a href="./tailor8.html" target="_blank">테일러 서비스</a></h1>
+                                <div class="col-lg-6 col-8">
+                                    <h3 class="ui header mt-3"><a href="./tailor8.html" target="_blank">🎁테일러(Tailor)
+                                            서비스란?</a></h1>
                                 </div>
                                 <div class="col">
-                                    <div class="mini ui secondary basic button mt-3 float-right"><a href="./tailor8.html" target="_blank" class="text-dark">더보기></a></div>
+                                    <div class="mini ui secondary basic button mt-3 float-right"><a
+                                            href="./tailor8.html" target="_blank" class="text-dark">더보기></a></div>
                                 </div>
                             </div>
-                            <div id="myCarousel2" class="ui yellow segment carousel slide" data-ride="carousel" data-interval="false" style="height:30rem;">
+                            <div id="myCarousel2" class="ui purple segment carousel slide" data-ride="carousel"
+                                data-interval="false" style="height:30rem; ">
                                 <ol class="carousel-indicators">
                                     <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
                                     <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
                                     <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
                                 </ol>
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active text-center">
+                                    <div class="carousel-item bg-white active text-center">
                                         <img src="images/index-tailor-1.jpg" style="height: 71%;" class="full-width">
                                         <div class="carousel-caption text-right text-dark">
                                             <h5>테일러 서비스</h5>
@@ -331,22 +361,26 @@
 
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div class="carousel-item bg-white">
                                         <img src="images/index-tailor-3.png" style="height:50%; width:100%;">
                                         <div class="carousel-caption text-center text-dark">
                                             <h5>테일러 서비스</h5>
-                                            <p> 요청한 <u>변수(값)의 난이도에 따라 데이터 추출이 불가 할 수도 있으나</u>, 상호 소통을 통해 고객의 요구사항을 최대한 충실히 반영하여 최고의 고객 만족을 제공 하겠습니다.</p>
+                                            <p> 요청한 <u>변수(값)의 난이도에 따라 데이터 추출이 불가 할 수도 있으나</u>, 상호 소통을 통해 고객의 요구사항을 최대한
+                                                충실히 반영하여 최고의 고객 만족을 제공 하겠습니다.</p>
                                         </div>
                                     </div>
-                                    <div class="carousel-item text-center">
-                                        <img src="images/index-tailor-2.png" style="height: 66%; opacity: 0.2;" class="full-width">
+                                    <div class="carousel-item bg-white text-center">
+                                        <img src="images/index-tailor-2.png" style="height: 66%; opacity: 0.2;"
+                                            class="full-width">
                                         <div class="carousel-caption text-left text-dark">
                                             <h5>테일러 서비스</h5>
                                             <p>국내 증권사의 HTS에서 사용하는 전문가들도 수행 하기 어려운 복잡한 조건 검색 및 데이터 추출을
                                                 <u>쉽고 편리하게
-                          단조로운 문장 서술만으로도 최정상 전문가 수준의 유의미한 주식투자 정보를 획득</u> 할 수 있으며, 이 유효한 정보가 매일 아침 고객의 이메일로 전송되는
+                                                    단조로운 문장 서술만으로도 최정상 전문가 수준의 유의미한 주식투자 정보를 획득</u> 할 수 있으며, 이 유효한 정보가
+                                                매일 아침 고객의 이메일로 전송되는
                                                 <u>강력한 맞춤형
-                          서비스</u>입니다.</p>
+                                                    서비스</u>입니다.
+                                            </p>
                                             <p><a class="ui button" href="./tailor8.html" role="button">더보기</a></p>
                                         </div>
                                     </div>
@@ -391,7 +425,9 @@
         fun();
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
