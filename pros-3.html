@@ -38,66 +38,83 @@
 
 <body class="d-flex flex-column h-100">
   <!-- Header -->
+
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu bg-e"
-      aria-label="Twelfth navbar example">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
-          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10" style="height:2rem;">
-          <ul class="navbar-nav  d-flex justify-content-between" style="width:100%">
-            <li class="nav-item">
-              <a href="./index.html" class="header nav-link text-gray-e"><img class="logo" src="images/logo.png"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./service.html" style="margin-top: 0.3rem;">서비스 소개</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./company.html" style="margin-top: 0.3rem;">회사 소개</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">솔루션 서비스 차별화 비교</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">연락</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">구독하기</a>
-            </li>
-            <div class="nav-item text-gray-e dropdown mt-1 ">
-              <a class="nav-link dropdown-toggle text-gray-e" href="#" id="dropdown10" data-bs-toggle="dropdown"
-                aria-expanded="false">로그인</a>
-              <ul class="dropdown-menu justify-content-center text-center" aria-labelledby="dropdown10"
-                style="min-width: max-content;">
-  
-                <form class="ui form my-3 mx-3">
-                  <div class="field">
-                    <label class="float-left">이메일 ID</label>
-                    <input type="text" name="first-name" placeholder="">
-                  </div>
-                  <div class="field">
-                    <label class="float-left">비밀 번호</label>
-                    <input type="text" name="last-name" placeholder="">
-                  </div>  
-                  <button class="ui yellow button " type="submit">로그인</button> <br />
-                  <button class="ui button tool-tip my-3" type="submit"
-                    data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
-                  <div class="ul list text-center"
-                    style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
-                    <a href="./join.html">회원 가입</a><br>
-                    <a href="#">ID/비밀번호 찾기</a>
-                  </div>
-                </form>
-              </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu p-2"
+        aria-label="Twelfth navbar example">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+
+            </button>
+            <span class="d-block d-sm-none"> 
+                <a href="./index.html" class="header nav-link text-gray-e"><img
+                        class="logo" src="images/logo.png"></a></span>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10"
+                style="height:2rem;">
+                <ul class="nav navbar-nav d-flex justify-content-between full-width" >
+                    <li class="nav-item d-none d-sm-block">
+                        <a href="./index.html" class="header nav-link text-gray-e"><img class="logo"
+                                src="images/logo.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./company.html" style="margin-top: 0.3rem;">회사 소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./service.html" style="margin-top: 0.3rem;">서비스 소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">EGLEO DB 플랫폼</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">고객센터</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">상품안내</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./example.html" style="margin-top: 0.3rem;">플랫폼 사용법(예제)</a>
+                    </li>
+
+                    
+                    <div class="nav-item text-gray-e dropdown mt-1">
+                        <a class="nav-link dropdown-toggle text-gray-e" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                        로그인
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width" style="right: 0 !important;width: 24rem;">
+                    
+                            <form class="ui form my-3 mx-3">
+                                <div class="field">
+                                    <label class="float-left">이메일 ID</label>
+                                    <input type="text" name="first-name" placeholder="">
+                                </div>
+                                <div class="field">
+                                    <label class="float-left">비밀 번호</label>
+                                    <input type="text" name="last-name" placeholder="">
+                                </div>
+            
+                                <button class="ui yellow button " type="submit">로그인</button> <br>
+                                <button class="ui button tool-tip my-3" type="submit" data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
+                                <div class="ul list text-center" style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
+                                    <a href="./join.html">회원 가입</a><br>
+                                    <a href="#">ID/비밀번호 찾기</a>
+                                </div>
+                            </form>
+                        </ul>
+                      </div>
+
+               
+                </ul>
             </div>
-          </ul>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
+
+  
 
 
   <main role="main" class="flex-shrink-0 mt-5">
@@ -171,7 +188,7 @@
                   <thead>
                     <tr>
                       <th></th>
-                      <th  style="width:30%;"><b class= "text-yellow-e">이글레오FT사</b></th>
+                      <th  style="width:30%;"><b class= "text-danger">이글레오FT사</b></th>
                       <th style="width:30%;" class="text-muted">국내 증권사(HTS)</th>
                       <th class="text-muted" style="width:30%;">국내 포탈 N사/D사</th>
                     </tr>
@@ -179,11 +196,11 @@
                   <tbody>
                     <tr>
                       <td>주식 투자 정보 <br />검색 구조</td>
-                      <td class= "text-yellow-e">
+                      <td class= "text-danger">
                         <li>3차원</li>
                         <li>다양한 변수(값) + 가변 일자 기준(과거~현재)</li>
                         <li>다양한 변수 값(재무정보/5일 이동 평균/RSI /MACD등)을 입력하고,“현재일” 뿐만이 아닌 “과거일” 부터 사용자가 원하는 일자 기준으로 가변성, 유연성 있게
-                          주식 데이터를 가공하여 유의미한 투자 종목을 산출 할 수 있습니다.</li>
+                          주식 데이터를 가공하여 <b>유의미한 투자 종목을 산출</b> 할 수 있습니다.</li>
 
                       </td>
                       <td class = "text-secondary">
@@ -202,8 +219,8 @@
                     </tr>
                     <tr>
                       <td>특장(단)점</td>
-                      <td class= "text-yellow-e">
-                        <li>주식 투자에 주요 지표가 되는 여러 변수(값)과 시간의 흐름(과거~현재)을 조합하여 우량 투자종목 선별이 가능케 합니다.</li>
+                      <td class= "text-danger">
+                        <li>주식 투자에 주요 지표가 되는 여러 변수(값)과 <b>시간의 흐름(과거~현재)을 조합</b>하여 우량 투자종목 선별이 가능케 합니다.</li>
                         <li>다양한 변수(값)을 기준으로 하는 3차원적 조합 및 가공, 추출을 하는 일련의 반복된 학습과정을 통해 보다 경쟁력 높은 투자 통찰력을 확보 할 수 있습니다.</li>
                         <li>종목, 변수(값), 시점의 다양한 3차원적 기준을 세워 주식 데이터 추출 및 가공을 쉽게 할 수 있으며, 보다 입체적이고 합리적인 투자 우량종목을 생성 할 수
                           있습니다.</li>
