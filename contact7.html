@@ -41,18 +41,18 @@
 
     <!-- Contact style -->
     <style>
-        .input-field {
+        .wrapper .input-field {
             padding: 2rem 1rem 0 1rem !important;
             /* height: 3.5rem !important; */
         }
 
-        form,
-        form>div {
+        .wrapper form,
+        .wrapper .form>div {
             position: relative;
             margin-bottom: 10px;
         }
 
-        label {
+        .wrapper label {
             position: absolute;
             left: 5px;
             top: 7px;
@@ -61,19 +61,19 @@
             transition: all 0.3s ease;
         }
 
-        input {
+        .wrapper input {
             height: 3.5rem;
             width: 100%;
             padding-left: 5px;
             line-height: 30px;
         }
 
-        label.focus {
+        .wrapper label.focus {
             font-size: 10px;
             top: 2px;
         }
 
-        label.has-value {
+        .wrapper label.has-value {
             color: #FFB81C;
             top: 2px;
             font-size: 0.8rem;
@@ -117,13 +117,13 @@
                             <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">EGLEO DB 플랫폼</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">고객센터</a>
+                            <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">지원 커뮤니티</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">상품안내</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./example.html" style="margin-top: 0.3rem;">플랫폼 사용법(예제)</a>
+                            <a class="nav-link" href="./example.html" style="margin-top: 0.3rem;">플랫폼 사용법</a>
                         </li>
 
                         
@@ -151,9 +151,7 @@
                                     </div>
                                 </form>
                             </ul>
-                          </div>
-
-                   
+                          </div>                   
                     </ul>
                 </div>
             </div>
@@ -213,25 +211,24 @@
                                 <th scope="col" style="width:10%">날짜</th>
                                 <th scope="col-6" style="width:60%"> 제목</th>
                                 <th scope="col">글쓴이</th>
-
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">2020.1.5</th>
-                                <td><a hre="#">제목입니다</a></td>
+                                <td><a href="./board_read.html">제목입니다</a></td>
                                 <td>admin</td>
 
                             </tr>
                             <tr>
                                 <th scope="row">2020.1.5</th>
-                                <td>제목입니다</td>
+                                <td><a href="./board_read.html">제목입니다</a></td>
                                 <td>admin</td>
 
                             </tr>
                             <tr>
                                 <th scope="row">2020.1.5</th>
-                                <td>제목입니다</td>
+                                <td><a href="./board_read.html">제목입니다</a></td>
                                 <td>admin</td>
 
                             </tr>
@@ -265,30 +262,26 @@
                     <div class="ui styled fluid accordion">
                         <div class="title ">
                           <i class="dropdown icon"></i>
-                          What is a dog?
+                          문의
                         </div>
                         <div class=" content">
-                          <p class="transition hidden">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+                          <p class="transition hidden">답</p>
                         </div>
                         <div class="title">
                           <i class="dropdown icon"></i>
-                          What kinds of dogs are there?
+                          문의
                         </div>
                         <div class="content ">
-                          <p class="transition visible">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+                          <p class="transition visible">문의</p>
                         </div>
                         <div class="title">
                           <i class="dropdown icon"></i>
-                          How do you acquire a dog?
+                          주식 문의3
                         </div>
                         <div class="content">
-                          <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
-                          <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+                          <p>내용</p>                          
                         </div>
-                      </div>
-
-
-                
+                      </div>                
                 </div>
 
 
@@ -375,15 +368,7 @@ $('.accordion')
     }
   })
 ;
-        /*$('.input-field').on('focus', function(){
-          $(this).prev().addClass('focus');
-        });
-        $('.input-field').on('blur', function(){
-          $(this).prev().removeClass('focus');
-        });
-        
-        if($('.input-field').val().addClass('focus'));*/
-
+ 
 
         $('.input-field').focus(function () {
             $(this).prev().addClass('focus');
@@ -394,13 +379,6 @@ $('.accordion')
             }
 
 
-
-            /*if($(this).val().length>0) {
-                $(this).prev().addClass('has-value');
-                console.log('Value exist');
-            }*/
-
-
         });
         $('.input-field').blur(function () {
             $(this).prev().removeClass('focus');
@@ -408,8 +386,6 @@ $('.accordion')
                 $(this).prev().removeClass('has-value');
             }
         });
-
-
 
 
 

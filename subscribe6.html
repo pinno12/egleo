@@ -45,8 +45,6 @@
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="./style.css" />
 
-  <!-- import the webpage's javascript file -->
-  <script src="./script.js" defer></script>
 
 </head>
 
@@ -85,13 +83,13 @@
                         <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">EGLEO DB 플랫폼</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">고객센터</a>
+                        <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">지원 커뮤니티</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">상품안내</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./example.html" style="margin-top: 0.3rem;">플랫폼 사용법(예제)</a>
+                        <a class="nav-link" href="./example.html" style="margin-top: 0.3rem;">플랫폼 사용법</a>
                     </li>
 
                     
@@ -132,15 +130,17 @@
   <main role="main" class="flex-shrink-0 mt-5">    
     <div class="container">
       <div class = "row justify-content-center my-5">
-        <h1>멤버십만으로 모든 것을 누리세요!</h1>
+        <h1 class = "text-yellow-e">상품 안내</h1>
       </div>
     
       <div class="row">
         <div class="col-11 col-lg-6">
-          <h1 class="ui header">결제 방법을 선택하세요 <span class="small text-muted" style="font-size:0.8rem;"></span></h1>
+          <h1 class="ui header">서비스 상품을 선택 하세요!!
+            </h1>
         </div>
         <div class="col-11 col-lg-6">
-          <p class="float-right">부가세 포함</p>
+          <p class="float-right">[단위: 원/부가세 포함]
+          </p>
         </div>
       </div>
       <div class="ui divider"></div>
@@ -149,7 +149,7 @@
           <div class="col-lg-3 col-11">
           
             <button class="ui button full-width items" onclick="bg_change($(this).attr('id'))"  id="실버" style = "border-bottom:10px double silver;">
-              <h2 class = "items-name">실버(Silver)</h2>
+             실버(Silver) <br />
               ￦1,100,000/3개월
             </button>
           </div>
@@ -187,10 +187,12 @@
         </p>
 
         <div class="d-grid gap-2"> 
-          <button class="ui yellow button full-width"><a href = "./join.html">가입하기</a></button>
+          <!-- <button class="ui yellow button full-width"><a href = "./join.html">가입하기</a></button> -->
 
           <!-- if logined -->
-          <!-- <button class="ui yellow button full-width" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">구독하기</button>                     -->
+          <button class="ui yellow button full-width" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            구독하기
+          </button>                    
         </div>
         <div class="collapse" id="collapseExample">
           <div class="ui yellow segment">
@@ -208,24 +210,16 @@
               </div>
             </div>
             <div class="ui two top attached buttons">
-              <div class="ui  button" style = "background-color: #C1C6C6;"> 현금 결제 :  ㈜이글레오에프티/00은행 <br />
-                계좌  ooxxx-xxxxx-xxxxxxx로 입금 </div>
-              <div class="ui button" style="background-color: #d9d9d6;">
-                <a class = "text-dark" href = "./tailor8.html#t7">신용카드 결제</a></div>
+              <div class="ui  button" style = "background-color: #C1C6C6;"> 
+                <h3>무통장입금 계좌번호</h3>
+                <h2 class = "text-primary">1005-203-472150</h2>
+                <h3 class = "text-primary ">우리은행 이글레오에프티</h3>
+                
+                 </div>
+              <div class="ui button" style="background-color: #d9d9d6; padding-top:4rem;">
+                <a class = "text-dark" href = "./tailor8.html#t7"><h2>신용카드 결제</h2></a></div>
           </div>
-            <!-- <div class = "row">
-              <div class ="col-lg-6 col-11">
-                <div class = "ui gray segment">
-                  현금 결제 :  ㈜이글레오에프티/00은행 <br />
-                  계좌  ooxxx-xxxxx-xxxxxxx로 입금 
-                </div>
-              </div>
-              <div class ="col-lg-6 col-11">
-                <div class = "ui blue button full-width">
-                  신용카드 결제 
-                </div>
-              </div>              
-            </div> -->
+           
             
               <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <button class="btn btn-primary me-md-2" type="button">취소</button>
@@ -267,9 +261,7 @@
   
 
 
-  </div>
-
-    </div>    
+  </div>     
 </main>
 <div class="ui inverted vertical footer segment footer mt-auto py-3">
   <div class="ui container">
