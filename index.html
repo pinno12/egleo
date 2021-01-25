@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="h-100" lang="ko">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -12,6 +11,7 @@
     <meta property="og:image" content="images/thumbnail.png" />
     <title>이글레오에 오신 걸 환영합니다</title>
 
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap"
@@ -20,46 +20,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- EGLEO version1 기존 부트스트랩 -->
+<link rel="stylesheet" href="/resources/egleo/css/bootstrap.min.css">
+<link rel="stylesheet" href="/resources/egleo/css/style.stock.css">
+<link href="/resources/egleo/css/swiper.min.css" rel="stylesheet">
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
-
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
-
-
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon.png">
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="./style.css">
-
-
     <!-- index page style -->
     <style>
         #container2 {
             overflow: hidden;
         }
-
         /* body {
             overflow-y: auto;
         } */
-
-
         #fancy_h1_wrap {
             display: block;
             width: 100%;
@@ -71,8 +65,6 @@
 	
     </style>
 </head>
-
-
 <body class="d-flex flex-column h-100" style="
 background-color: rgba(167, 168, 170,0.1);
 ">
@@ -84,9 +76,7 @@ background-color: rgba(167, 168, 170,0.1);
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-    
-    
+                    <span class="navbar-toggler-icon"></span>   
                 </button>
                 <span class="d-block d-sm-none"> 
                     <a href="./index.html" class="header nav-link text-gray-e"><img
@@ -139,22 +129,25 @@ background-color: rgba(167, 168, 170,0.1);
                                     <button class="ui button tool-tip my-3" type="submit" data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
                                     <div class="ul list text-center" style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
                                         <a href="./join.html">회원 가입</a><br>
-                                        <a href="#">ID/비밀번호 찾기</a>
+                                        <a href="./findpwd.html">ID/비밀번호 찾기</a>
                                     </div>
                                 </form>
                             </ul>
-                          </div>
-    
-                   
+                          </div>  
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <main role="main" class="flex-shrink-0 mt-5" style = "overflow-x: hidden;" >
         <div class="container mt-4">
-            <div class="row full-height mt-3">
+            <section id = "notice">
+                <div class="example1 ui secondary segment my-3 p-0">
+                    <h3>공지사항입니다.  공지사항입니다. 공지사항입니다. 공지사항입니다.</h3>
+                    </div>
+            </section>
+            
+            <div class="row full-height mt-3" id = "sliders">
                 <!-- 추천 종목 -->
                 <div class="col-lg-6 ">
                     <div class="row">
@@ -162,12 +155,8 @@ background-color: rgba(167, 168, 170,0.1);
                             <!-- url 바꿔야 함 -->
                             <h3 class="ui header mt-2"><a href="http://www.stockdb.co.kr/today/summary">🦅실시간 급변동주</a></h3>
                         </div>
-                        <!-- <div class="col">
-              <div class="ui secondary button float-right"><a href="./ad.html" target="_blank">더보기></a></div>
-            </div> -->
                     </div>
                     <div class="ui grey segment " style="height:65rem;">
-
                         <table class="table  table-sm">
                             <thead>
                                 <tr class="text-center">
@@ -180,115 +169,89 @@ background-color: rgba(167, 168, 170,0.1);
                         </table>
                         <div class="example3">
                             <table class="table  table-sm">
-
                                 <tbody>
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('042000')">카페24</span>
-
                                         </td>
                                         <td>81,100</td>
                                         <td>2,350,467</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('032280')">삼일</a>
-
                                         </td>
                                         <td>2,205</td>
                                         <td>2,962,575</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('306040')">에스제이그룹</a>
-
                                         </td>
                                         <td>17,700</td>
                                         <td>821,739</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('122870')">와이지엔터테인먼트</a>
-
                                         </td>
                                         <td>47,000</td>
                                         <td>921,999</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('138930')">BNK금융지주</a>
-
                                         </td>
                                         <td>6,040</td>
                                         <td>504,693</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('079950')">인베니아</a>
-
                                         </td>
                                         <td>2,725</td>
                                         <td>157,035</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('014160')">대영포장</a>
-
                                         </td>
                                         <td>2,040</td>
                                         <td>162,143,948</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('017250')">인터엠</a>
-
                                         </td>
                                         <td>1,450</td>
                                         <td>700,499</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('000850')">화천기공</a>
-
                                         </td>
                                         <td>33,250</td>
                                         <td>6,600</td>
                                     </tr>
-
                                     <tr>
                                         <td>2021-01-13</td>
                                         <td><a href="#" onclick="javascript:openNaver('139130')">DGB금융지주</a>
-
                                         </td>
                                         <td>7,340</td>
                                         <td>1,092,404</td>
                                     </tr>
-
-
                                 </tbody>
                             </table>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- 홍보 삽화1 -->
                 <div class=" col-lg-6 full-height">
                     <div class="row">
                         <div class="col">
-                            <h3 class="ui header mt-2"><a href="./ad.html" target="_blank">📔슬기로운 주식생활</a></h1>
+                            <h3 class="ui header mt-2"><a href="./ad.html" target="_blank">📔저점에서 사서 고점에서 팔기</a></h1>
                         </div>
-
                     </div>
-
                     <div id="myCarousel" class="ui black segment carousel slide " data-ride="carousel"
                         data-interval="false" style="height:30rem;">
                         <ol class="carousel-indicators">
@@ -301,12 +264,10 @@ background-color: rgba(167, 168, 170,0.1);
                                 <img src="images/ad/1.png" style="min-width:30%; height: 54%;" class="text-center mt-5">
                                 <div class="container">
                                     <div class="carousel-caption text-center text-dark pb-5">
-                                        <p>오호! 박 하수, 오래간만이야! 반가워!<br /> 요즘도 주식투자 때문에 골머리 앓아? <br />잘 돼?</p>
-                                        <!-- <p><a class="ui button" href="#" role="button">더보기</a></p> -->
+                                        <p>오호! 박 하수, 오래간만이야! 반가워!<br /> 요즘도 주식투자 때문에 골머리 앓아? <br />잘 돼?</p>                    
                                     </div>
                                 </div>
                             </div>
-
                             <div class="carousel-item bg-white text-center">
                                 <img src="images/ad/11.png" style="height: 70%;">
                                 <div class="carousel-caption text-center text-dark">
@@ -335,61 +296,39 @@ background-color: rgba(167, 168, 170,0.1);
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-
-
                     <div class="row full-height">
                         <div class="col">
                             <div class="row">
-                                <div class="col-lg-6 col-8">
-                                    <h3 class="ui header mt-3"><a href="./tailor8.html" target="_blank">🎁테일러(Tailor)
-                                            서비스란</a></h1>
-                                </div>
-                                <div class="col">
-                                    <div class="mini ui secondary basic button mt-3 float-right"><a
-                                            href="./tailor8.html" target="_blank" class="text-dark">더보기></a></div>
-                                </div>
+                                <div class="col-lg-6 ">
+                                    <h3 class="ui header mt-3"><a href="./tailor8.html" target="_blank">🎁맞춤형 서비스란</a></h1>
+                                </div>                                
                             </div>
                             <div id="myCarousel2" class="ui orange segment carousel slide" data-ride="carousel"
                                 data-interval="false" style="height:30rem; ">
                                 <ol class="carousel-indicators">
                                     <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-                                    <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+                                    <li data-target="#myCarousel2" data-slide-to="1" class=""></li>                                 
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item bg-white active text-center">
-                                        <img src="images/index-tailor-1.jpg" style="height: 71%;" class="full-width">
+                                        <img src="images/index-tailor-1.jpg" style="height: 67%;" class="full-width">
                                         <div class="carousel-caption text-right text-dark">
                                             <h5>테일러 서비스</h5>
                                             <p>아주 손쉽게 원하는 서술 만으로도 전문가 이상의 <u>종목 선정 추출이 가능한 서비스</u>입니다.</p>
-
+                                            <p><a class="ui button text-light" href="./tailor8.html" role="button" style = "background-color:  #1E90FF;">더보기</a></p>
                                         </div>
                                     </div>
-                                    <div class="carousel-item bg-white">
-                                        <img src="images/index-tailor-3.png" style="height:50%; width:100%;">
-                                        <div class="carousel-caption text-center text-dark">
-                                            <h5>테일러 서비스</h5>
-                                            <p> 요청한 <u>변수(값)의 난이도에 따라 데이터 추출이 불가 할 수도 있으나</u>, 상호 소통을 통해 고객의 요구사항을 최대한
-                                                충실히 반영하여 최고의 고객 만족을 제공 하겠습니다.</p>
-                                        </div>
-                                    </div>
+                            
                                     <div class="carousel-item bg-white text-center">
-                                        <img src="images/index-tailor-2.png" style="height: 66%; opacity: 0.2;"
+                                        <img src="https://cdn.glitch.com/55a1f97f-7f0e-4c9e-ba0c-cfe51fcf8285%2F122.PNG?v=1611553785830" style="height: 100%; opacity: 0.2;"
                                             class="full-width">
                                         <div class="carousel-caption text-left text-dark">
-                                            <h5>테일러 서비스</h5>
-                                            <p>국내 증권사의 HTS에서 사용하는 전문가들도 수행 하기 어려운 복잡한 조건 검색 및 데이터 추출을
-                                                <u>쉽고 편리하게
-                                                    단조로운 문장 서술만으로도 최정상 전문가 수준의 유의미한 주식투자 정보를 획득</u> 할 수 있으며, 이 유효한 정보가
-                                                매일 아침 고객의 이메일로 전송되는
-                                                <u>강력한 맞춤형
-                                                    서비스</u>입니다.
+                                            <h5>스톡킹 서비스</h5>
+                                            <p>빅데이터 기반의 사용자 요구형(On-demand) DB 파일 제공 서비스.  고객의 원하는 다수의 데이터 항목(레코드)에 맞춰 파일 DB 형태의 결과물을 신선하게 매일 오전 배달 합니다.    
                                             </p>
-                                            <p><a class="ui button" href="./tailor8.html" role="button">더보기</a></p>
+                                            <p><a class="ui button text-light" href="./stocking.html" role="button" style = "background-color:  #1E90FF;">더보기</a></p>
                                         </div>
                                     </div>
-
-
                                 </div>
                                 <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
                                     <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
@@ -405,494 +344,463 @@ background-color: rgba(167, 168, 170,0.1);
                     </div>
                 </div>
             </div>
-            <div class="bg-white  mt-3">
-                <div class="row d-flex justify-content-center">
-                    <div class=" col-lg-12 text-center">
-                        <img src="images/pros1.png" width="50%">
+            <!-- EGLEO DB 플랫폼 -->
+            <section class="bg-white  mt-3" id = "pros">
+                <div class="">
+                    <div class="row d-flex justify-content-center" data-aos="flip-up">
+                      <div class=" col-lg-6">
+                        <img src="images/pros1.png" width="100%">
+                      </div>
                     </div>
-                </div>
-
-                <div class="row mb-5">
-                    <div class=" col-lg-12 text-yellow-e text-center">
+              
+                    <div class="row mb-5">
+                      <div class=" col-lg-12 text-yellow-e text-center">
                         <h1>차별화 된 주식 투자 정보 서비스가 당신을 성공의 길로 인도 합니다!!</h1>
+                      </div>
                     </div>
-                </div>
-
-                <div class="row mt-5" data-aos="fade-up">
-                    <div class="col-lg-3 offset-lg-1">
+              
+                    <div class="row mt-5" data-aos="fade-up">
+                      <div class="col-lg-3 offset-lg-1">
                         <img src="images/pros2.png" width="100%">
-                    </div>
-                    <div class="col-lg-7">
+                      </div>
+                      <div class="col-lg-7">
                         <div class="ui tall stacked segment">
-                            <ol class="ui list">
-                                <b style="line-height: 4rem;">EGLEO서비스 특징</b>
-
-                                <li value="✔︎" data-aos="fade-up" class="my-3">3차원 형태의 데이터 구조</li>
-                                <li value=" ✔︎" data-aos="fade-up" class="my-3"> 3차원 검색 조건(필터링) : 종목명 + 항목명 + 시간대(과거~현재)
-                                </li>
-                                <li value=" ✔︎" data-aos="fade-up" class="my-3">효율적인 추출/가공 기능 : 다양한 변수 값(재무정보/5일 이동
-                                    평균/RSI /MACD등)을 입력하고,
-                                    “현재일” 뿐만이 아닌 “과거일” 부터 사용자가 원하는 일자 기준으로 가변성,
-                                    유연성 있게 주식 데이터를 가공하여 유의미한 투자 종목을 산출 할 수 있다.
-                                </li>
-                            </ol>
+                          <ol class="ui list">
+                            <h2 style="line-height: 4rem;">EGLEO DB 플랫폼 서비스의 특징
+                            </h2>              
+                            <li value="✔︎" data-aos="fade-up" class="my-3">3차원 형태의 데이터 구조</li>
+                            <li value=" ✔︎" data-aos="fade-up" class="my-3"> 3차원 검색 조건(필터링) : 종목명 + 항목명 + 시간대(과거~현재)</li>
+                            <li value=" ✔︎" data-aos="fade-up" class="my-3">데이터 변수값 970여개 제공.</li>
+                              <li value=" ✔︎" data-aos="fade-up" class="my-3">폭넓은 시간대(과거일 ~ 현재일)의 가변성 제공.</li>
+                              <li value=" ✔︎" data-aos="fade-up" class="my-3">유연한 데이터 구조의 편집 및 가공.</li>
+                              <li value=" ✔︎" data-aos="fade-up" class="my-3">수학적 알고리즘 기반의 유효한 투자 종목 추출.</li> 
+                          </ol>
                         </div>
+                      </div>
                     </div>
-                </div>
-
-                <div class=" row justify-content-center" data-aos="flip-left">
-                    <div class=" col-lg-4 my-5">
+              
+                    <div class=" row  justify-content-center" data-aos="flip-left">
+                      <div class=" col-lg-4 my-5">
                         <img src="images/pros3.png" style="width:100%;">
-                    </div>
-                </div>
-
-                <div class="row justify-content-center mt-5">
-                    <div class=" col-lg-8">
-                        <ol class="ui list">
-                            <li value="👉🏽" data-aos="fade-up" class="my-3">주식 투자에 주요 지표가 되는 여러 변수(값)과 시간의 흐름(과거~현재)을
-                                조합하여 우량 투자종목 선별이 가능케 합니다.
-                            </li>
-                            <li value="👉🏽" data-aos="fade-up" class="my-3">다양한 변수(값)을 기준으로 하는 3차원적 조합 및 가공, 추출을 하는 일련의
-                                반복된 학습과정을 통해 보다 경쟁력 높은 투자 통찰력을 확보
-                                할 수 있습니다.
-                            </li>
-                            <li value="👉🏽" data-aos="fade-up" class="my-3">
-                                종목, 변수(값), 시점의 다양한 3차원적 기준을 세워 주식 데이터 추출 및 가공을 쉽게 할 수 있으며, 보다 입체적이고 합리적인 투자 우량종목을 생성 할 수
-                                있습니다.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-
-        
-                <div class="row my-5">
-                    <div class="accordion" id="accordionExample">
+                      </div>
+                    </div>              
+                  
+                    <div class="row my-5">
+                      <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button bg-white text-dark" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    다른 서비스와 어떻게 다를까요?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">                         
-
-                                  
-                                    <table class="ui orange table">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th  style="width:30%;"><b class= "text-danger">이글레오FT사</b></th>
-                                                <th style="width:30%;" class="text-muted">국내 증권사(HTS)</th>
-                                                <th class="text-muted" style="width:30%;">국내 포탈 N사/D사</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">주식 투자 정보 <br />검색 구조</th>
-                                               
-                                                <td class="text-danger">
-                                                    <li>3차원</li>
-                                                    <li>다양한 변수(값) + 가변 일자 기준(과거~현재)</li>
-                                                    <li>다양한 변수 값(재무정보/5일 이동 평균/RSI /MACD등)을 입력하고,“현재일” 뿐만이 아닌 “과거일” 부터
-                                                        사용자가 원하는 일자 기준으로 가변성, 유연성 있게
-                                                        주식 데이터를 가공하여 <b>유의미한 투자 종목을 산출</b> 할 수 있습니다.</li>
-
-                                                </td>
-                                                <td class="text-secondary">
-                                                    <li>2차원</li>
-                                                    <li>다양한 변수(값) + 현재일 기준</li>
-                                                    <li>다양한 변수 값(재무정보/5일 이동평균선/RSI/MACD등)을 입력하고 나면, “현재일” 기준으로 해당 여러 종목이
-                                                        도출, 나열 됩니다.</li>
-
-                                                </td>
-                                                <td class="text-secondary">
-                                                    <li>1차원</li>
-                                                    <li>특정(고정)종목 + 현재일 기준</li>
-                                                    <li>특정 종목을 선택하면 그 종목에 대한 여러가지 정보가 도출, 나열됩니다.</li>
-                                                    <li>모든 정보의 기준 일자는 “현재일”로 고정 되어있습니다.</li>
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">특장(단)점</th>
-                                               
-                                                <td class="text-danger">
-                                                    <li>주식 투자에 주요 지표가 되는 여러 변수(값)과 <b>시간의 흐름(과거~현재)을 조합</b>하여 우량 투자종목
-                                                        선별이 가능케 합니다.</li>
-                                                    <li>다양한 변수(값)을 기준으로 하는 3차원적 조합 및 가공, 추출을 하는 일련의 반복된 학습과정을 통해 보다 경쟁력
-                                                        높은 투자 통찰력을 확보 할 수 있습니다.</li>
-                                                    <li>종목, 변수(값), 시점의 다양한 3차원적 기준을 세워 주식 데이터 추출 및 가공을 쉽게 할 수 있으며, 보다
-                                                        입체적이고 합리적인 투자 우량종목을 생성 할 수
-                                                        있습니다.</li>
-                                                </td>
-                                                <td class="text-secondary">
-                                                    <li>다양한 변수(값)의 조합으로 종목 선별이 가능하나 “현재일” 기준이므로 과거로 부터 누적된 흐름 분석 및 변화와
-                                                        특징을 간파하기에는 다분이 어려움이 있습니다.
-                                                    <li>투자 종목에 대한 최종의사결정에 부족 함이 있습니다.</li>
-                                                    <li>일반인 보다는 전문가 또는 베테랑에 적합한 서비스.</li>
-                                                </td>
-                                                <td class="text-secondary">
-                                                    <li>포탈사로서의 역할에 지극히 충실한 서비스.</li>
-                                                    <li>종목+현재일 기준의 단순 나열 서비스.</li>
-                                                    <li>이 서비스로 수많은 국내 종목들을 비교 분석한다는 것은 거의 불가능.</li>
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                </td>
-                                                <td>
-                                                    <img class="full-width" src="images/pros3.png">
-                                                    <span class = "d-block d-sm-none text-center mb-5">이글레오FT사</span>
-                                                </td>
-                                                <td>
-                                                    <img class="full-width" src="images/pros4.png">
-                                                    <span class = "d-block d-sm-none text-center mb-5">국내 증권사(HTS)</span>
-                                                </td>
-                                                <td>
-                                                    <img class="full-width" src="images/pros5.png">
-                                                    <span class = "d-block d-sm-none text-center mb-5">국내 포탈 N사/D사</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style= "color: #1E90FF">
+                              다른 서비스와 어떻게 다를까요?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+              
+                              <table class="ui blue table">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th style="width:30%;"><b class="text-blue-e">이글레오FT사</b></th>
+                                    <th style="width:30%;" class="text-muted">국내 증권사(HTS)</th>
+                                    <th class="text-muted" style="width:30%;">국내 포탈 N사/D사</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>주식 투자 정보 <br />검색 구조</td>
+                                    <td class="text-blue-e">
+                                      <li>3차원</li>
+                                      <li>다양한 변수(값) + 가변 일자 기준(과거~현재)</li>
+                                      <li>다양한 변수 값(재무정보/5일 이동 평균/RSI /MACD등)을 입력하고,“현재일” 뿐만이 아닌 “과거일” 부터 사용자가 원하는 일자 기준으로 가변성, 유연성 있게
+                                        주식 데이터를 가공하여 <b>유의미한 투자 종목을 산출</b> 할 수 있습니다.</li>
+              
+                                    </td>
+                                    <td class="text-secondary">
+                                      <li>2차원</li>
+                                      <li>다양한 변수(값) + 현재일 기준</li>
+                                      <li>다양한 변수 값(재무정보/5일 이동평균선/RSI/MACD등)을 입력하고 나면, “현재일” 기준으로 해당 여러 종목이 도출, 나열 됩니다.</li>
+              
+                                    </td>
+                                    <td class="text-secondary">
+                                      <li>1차원</li>
+                                      <li>특정(고정)종목 + 현재일 기준</li>
+                                      <li>특정 종목을 선택하면 그 종목에 대한 여러가지 정보가 도출, 나열됩니다.</li>
+                                      <li>모든 정보의 기준 일자는 “현재일”로 고정 되어있습니다.</li>
+              
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>특장(단)점</td>
+                                    <td class="text-blue-e">
+                                      <li>주식 투자에 주요 지표가 되는 여러 변수(값)과 <b>시간의 흐름(과거~현재)을 조합</b>하여 우량 투자종목 선별이 가능케 합니다.</li>
+                                      <li>다양한 변수(값)을 기준으로 하는 3차원적 조합 및 가공, 추출을 하는 일련의 반복된 학습과정을 통해 보다 경쟁력 높은 투자 통찰력을 확보 할 수 있습니다.</li>
+                                      <li>종목, 변수(값), 시점의 다양한 3차원적 기준을 세워 주식 데이터 추출 및 가공을 쉽게 할 수 있으며, 보다 입체적이고 합리적인 투자 우량종목을 생성 할 수
+                                        있습니다.</li>
+                                    </td>
+                                    <td class="text-secondary">
+                                      <li>다양한 변수(값)의 조합으로 종목 선별이 가능하나 “현재일” 기준이므로 과거로 부터 누적된 흐름 분석 및 변화와 특징을 간파하기에는 다분이 어려움이 있습니다.
+                                      <li>투자 종목에 대한 최종의사결정에 부족 함이 있습니다.</li>
+                                      <li>일반인 보다는 전문가 또는 베테랑에 적합한 서비스.</li>
+                                    </td>
+                                    <td class="text-secondary">
+                                      <li>포탈사로서의 역할에 지극히 충실한 서비스.</li>
+                                      <li>종목+현재일 기준의 단순 나열 서비스.</li>
+                                      <li>이 서비스로 수많은 국내 종목들을 비교 분석한다는 것은 거의 불가능.</li>              
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        <img class="full-width" src="images/pros3.png">
+                                      </td>
+                                      <td>
+                                        <img class="full-width" src="images/pros4.png">
+                                      </td>
+                                      <td>
+                                        <img class="full-width" src="images/pros5.png">
+                                      </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-
-            </div>
+                      </div>
+                    </div>             
+                  </div>          
+            </section>
+          
 <!-- 플랫폼 사용법 -->
 <section id = "exmaple" class = "bg-white pt-1">
-    <div class="">
-
-        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center bg-e mt-5">
-            <h1 class="display-5">EGLEO의 STOCK DB 세계를 직접 체험해 보세요! </h1>
-            <p class="lead">아래 STOCK DB데이터 추출 예를 골라보세요. <br />
-            </p>
-            <div class="ui compact menu">
-                <div class="ui simple dropdown item" style="width:23rem;">
-                    패턴분석을 통해 상승종목을 추출하는 예
-                    <i class="dropdown icon"></i>
-                    <div class="menu" style="width:23rem;">
-                        <div class="item">업종 분석을 통해 바닥 종목을 추출하는 예</div>
-                        <div class="item">패턴분석을 통해 상승종목을 추출하는 예</div>
-                        <div class="item">이동평균선 메뉴를 통해 상승종목을 추출하는 예</div>
-                        <div class="item">최고가 대비 하락 통해 상승종목을 추출하는 예</div>
-                        <div class="item">최저가 대비 상승 통해 상승종목을 추출하는 예</div>
-                    </div>
+<div class="">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center bg-e mt-5">
+        <h1 class="display-5 fw-bold">EGLEO의 STOCK DB 세계를 직접 체험해 보세요! </h1>
+        <p class="lead">아래 STOCK DB데이터 추출 예를 골라보세요. <br />
+        </p>
+        <div class="ui compact menu">
+            <div class="ui simple dropdown item" style="width:23rem;">
+                패턴분석을 통해 상승종목을 추출하는 예
+                <i class="dropdown icon"></i>
+                <div class="menu" style="width:23rem;">
+                    <div class="item">업종 분석을 통해 바닥 종목을 추출하는 예</div>
+                    <div class="item">패턴분석을 통해 상승종목을 추출하는 예</div>
+                    <div class="item">이동평균선 메뉴를 통해 상승종목을 추출하는 예</div>
+                    <div class="item">최고가 대비 하락 통해 상승종목을 추출하는 예</div>
+                    <div class="item">최저가 대비 상승 통해 상승종목을 추출하는 예</div>
                 </div>
             </div>
-        </div>
-
-        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-bold">STOCK DB 플랫폼</h1>
-            <p class="lead">“Based on Big Data Technology”</p>
-        </div>
-
-        <div class="ui three stackable cards">
-            <div class="card service justify-content-center" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-secondary bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <!-- 회원일 경우 -->
-                    <!-- <a href = "./join.html"><i class="clipboard check icon text-white" style="font-size: 5rem"></i></a> -->
-                    <!-- 회원 아닐 경우 -->
-                    <a class="guest" href="/today/main"><i class="clipboard check icon text-white"
-                            style="font-size: 5rem"></i></a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header">
-                        <!-- <a class = "guest" href="./join.html">일별종목지표 </a> -->
-                        <!--  -->
-                        <a class="guest" href="http://www.stockdb.co.kr/today/main">일별종목지표 </a>
-
-                    </div>
-                    <div class="description">
-                        특징주, 상승/하락, 시초가갭, 최고가/최저가, 거래량 급등/급감
-                    </div>
-                </div>
-            </div>
-
-            <div class="card service justify-content-center" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-warning bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <a class="guest" href="http://www.stockdb.co.kr/upjong/rising_most">
-                        <i class="file alternate  icon text-white" style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest" class="guest"
-                            href="http://www.stockdb.co.kr/upjong/rising_most">업종분석</a></div>
-                    <div class="description">
-                        업종별 요약, 업종별 주가변동
-                    </div>
-                </div>
-            </div>
-
-            <div class="card service justify-content-center" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-danger bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <a class="guest" href="http://www.stockdb.co.kr/basic/rising_falling">
-                        <i class="laptop icon text-white " style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest"
-                            href="http://www.stockdb.co.kr/basic/rising_falling">기본분석</a></div>
-                    <div class="description">
-                        종복정보, 기간 상승/하락, 기간 주가변동, 신용/공매도, 투자자 변동
-                    </div>
-                </div>
-            </div>
-
-            <div class="card service justify-content-center" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-light bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <a class="guest" href="/finance/year">
-                        <i class="won sign icon text-warning" style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest" href="/finance/year">재무분석</a></div>
-                    <div class="description">
-                        연재무지표 변동, 분기 재무지표 변동
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card service justify-content-center" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-primary bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <a class="guest" href="/sma/ma5_20">
-                        <i class="bell icon text-light " style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest" href="/sma/ma5_20">이동평균선분석</a></div>
-                    <div class="description">
-                        일봉 돌파, 주봉 돌파, 수렴상태에서 이평선 돌파
-                    </div>
-                </div>
-            </div>
-
-            <div class="card service justify-content-center" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-info bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <a class="guest" href="/secondary/macd_plus">
-                        <i class="chart line icon text-white " style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest" href="/secondary/macd_plus">보조지표분석</a></div>
-                    <div class="description">
-                        투자심리선, 이평선 이격률, 체결강도
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-dark bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <a class="guest" href="/advance/rising_ndays_min">
-                        <i class="chart pie icon text-white " style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest" href="/advance/rising_ndays_min">고급분석I</a></div>
-                    <div class="description">
-                        패턴분석, 기간별 주가 변동, 기간별 상승/하락후 양봉/음봉 출현
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style=" box-shadow: none;
-            -webkit-box-shadow:none;">
-                <div class="text-center bg-success bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-                    <a class="guest" href="/advance/rising_ndays_min">
-                        <i class="chart area icon text-white" style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest" href="/advance/rising_ndays_min">고급분석II</a></div>
-                    <div class="description">
-                        패턴분석, 기간별 주가 변동, 기간별 상승/하락후 양봉/음봉 출현
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card" style=" box-shadow: none;
-        -webkit-box-shadow:none;">
-                <div class="text-center bg-warning bg-gradient col-4 mx-auto shadow pt-5"
-                    style="border-radius: 20% !important;">
-
-                    <a class="guest" href="/simulation/basic/rising_falling">
-                        <i class="table icon text-white " style="font-size: 5rem"></i>
-                    </a>
-                </div>
-                <div class="content text-center" style=" border-top:none;">
-                    <div class="header"> <a class="guest" href="/simulation/basic/rising_falling">황금 개미
-                            [종목 추출 시뮬레이터]
-                        </a></div>
-                    <div class="description">
-                        특정 일자, 특정 조건 주가 흐름 시뮬레이션
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-5 fw-bold">STOCK DB 플랫폼</h1>
+        <p class="lead">“Based on Big Data Technology”</p>
+    </div>
+    <div class="ui three stackable cards">
+        <div class="card service justify-content-center" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-secondary bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <!-- 회원일 경우 -->
+                <!-- <a href = "./join.html"><i class="clipboard check icon text-white" style="font-size: 5rem"></i></a> -->
+                <!-- 회원 아닐 경우 -->
+                <a class="guest" href="/today/main"><i class="clipboard check icon text-white"
+                        style="font-size: 5rem"></i></a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header">
+                    <!-- <a class = "guest" href="./join.html">일별종목지표 </a> -->
+                    <!--  -->
+                    <a class="guest" href="http://www.stockdb.co.kr/today/main">일별종목지표 </a>
+                </div>
+                <div class="description">
+                    특징주, 상승/하락, 시초가갭, 최고가/최저가, 거래량 급등/급감
+                </div>
+            </div>
+        </div>
+        <div class="card service justify-content-center" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-warning bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="http://www.stockdb.co.kr/upjong/rising_most">
+                    <i class="file alternate  icon text-white" style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest" class="guest"
+                        href="http://www.stockdb.co.kr/upjong/rising_most">업종분석</a></div>
+                <div class="description">
+                    업종별 요약, 업종별 주가변동
+                </div>
+            </div>
+        </div>
+        <div class="card service justify-content-center" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-danger bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="http://www.stockdb.co.kr/basic/rising_falling">
+                    <i class="laptop icon text-white " style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest"
+                        href="http://www.stockdb.co.kr/basic/rising_falling">기본분석</a></div>
+                <div class="description">
+                    종복정보, 기간 상승/하락, 기간 주가변동, 신용/공매도, 투자자 변동
+                </div>
+            </div>
+        </div>
+        <div class="card service justify-content-center" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-light bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="/finance/year">
+                    <i class="won sign icon text-warning" style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest" href="/finance/year">재무분석</a></div>
+                <div class="description">
+                    연재무지표 변동, 분기 재무지표 변동
+                </div>
+            </div>
+        </div>
+        <div class="card service justify-content-center" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-primary bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="/sma/ma5_20">
+                    <i class="bell icon text-light " style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest" href="/sma/ma5_20">이동평균선분석</a></div>
+                <div class="description">
+                    일봉 돌파, 주봉 돌파, 수렴상태에서 이평선 돌파
+                </div>
+            </div>
+        </div>
+        <div class="card service justify-content-center" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-info bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="/secondary/macd_plus">
+                    <i class="chart line icon text-white " style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest" href="/secondary/macd_plus">보조지표분석</a></div>
+                <div class="description">
+                    투자심리선, 이평선 이격률, 체결강도
+                </div>
+            </div>
+        </div>
+        <div class="card" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-dark bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="/advance/rising_ndays_min">
+                    <i class="chart pie icon text-white " style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest" href="/advance/rising_ndays_min">고급분석I</a></div>
+                <div class="description">
+                    패턴분석, 기간별 주가 변동, 기간별 상승/하락후 양봉/음봉 출현
+                </div>
+            </div>
+        </div>
+        <div class="card" style=" box-shadow: none;
+        -webkit-box-shadow:none;">
+            <div class="text-center bg-success bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="/advance/rising_ndays_min">
+                    <i class="chart area icon text-white" style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest" href="/advance/rising_ndays_min">고급분석II</a></div>
+                <div class="description">
+                    패턴분석, 기간별 주가 변동, 기간별 상승/하락후 양봉/음봉 출현
+                </div>
+            </div>
+        </div>
+        <div class="card" style=" box-shadow: none;
+    -webkit-box-shadow:none;">
+            <div class="text-center bg-warning bg-gradient col-4 mx-auto shadow pt-5"
+                style="border-radius: 20% !important;">
+                <a class="guest" href="/simulation/basic/rising_falling">
+                    <i class="table icon text-white " style="font-size: 5rem"></i>
+                </a>
+            </div>
+            <div class="content text-center" style=" border-top:none;">
+                <div class="header"> <a class="guest" href="/simulation/basic/rising_falling">황금 개미
+                        [종목 추출 시뮬레이터]
+                    </a></div>
+                <div class="description">
+                    특정 일자, 특정 조건 주가 흐름 시뮬레이션
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
-
-
 <div class = "ui divider"></div>
 <!-- 상품안내 -->
 <section  class = "bg-white container py-5" id="subscribe">
-    <div class = "row justify-content-center my-5">
-      <h1 class = "text-yellow-e">상품 안내</h1>
-    </div>
+    <div class="">
+        <div class = "row justify-content-center my-5">
+          <h1 class = "text-yellow-e">상품 안내</h1>
+        </div>      
+        <div class="row">
+          <div class="col-11 col-lg-6">
+            <h1 class="ui header">서비스 상품을 선택 하세요!!
+              </h1>
+          </div>
+          <div class="col-11 col-lg-6">
+            <p class="float-right">[단위: 원/부가세 포함]
+            </p>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+    
+        <div class = "row my-5">        
+            <div class="offset-lg-1 col-lg-3 col-11">
+              <button class="ui button full-width items" onclick="bg_change($(this).attr('id'))"  id="실버" style = "border-bottom:10px double silver;">
+                <div class="ui top left attached olive label">일반형 서비스</div>
+               
+               <div class = "fs-4">실버(Silver)</div>
+                ￦1,100,000/3개월
+              </button>
+            </div>
   
-    <div class="row">
-      <div class="col-11 col-lg-6">
-        <h1 class="ui header">결제 방법을 선택하세요 <span class="small text-muted" style="font-size:0.8rem;"></span></h1>
-      </div>
-      <div class="col-11 col-lg-6">
-        <p class="float-right">부가세 포함</p>
-      </div>
-    </div>
-    <div class="ui divider"></div>
-
-    <div class = "row my-5">        
-        <div class="col-lg-3 col-11">
-        
-          <button class="ui button full-width items" onclick="bg_change($(this).attr('id'))"  id="실버" style = "border-bottom:10px double silver;">
-           실버(Silver) <br />
-            ￦1,100,000/3개월
-          </button>
+            <div class="col-lg-3 col-11">
+              <button class="ui button full-width items"  onclick="bg_change($(this).attr('id'))"  id="골드" style = "border-bottom:10px double gold;">
+                <div class="ui top left attached olive label">일반형 서비스</div>
+                <div class = "fs-4">골드(Gold) </div>
+                ￦2,200,000/6개월
+              </button>
+            </div>
+  
+            <div class="col-lg-3 col-11">
+              <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="프리미엄" style = "border-bottom:10px double black;">
+                <div class="ui top left attached olive label">일반형 서비스</div>
+                <div class = "fs-4">프리미엄(Premium)</div>
+                ￦3,850,000/ <span class = "text-small">12개월</span>
+              </button>
+            </div>
+          
+            
+            <div class="offset-lg-3 col-lg-3 col-11 mt-5">
+           
+              <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="테일러" style = "border-bottom:10px double purple;">
+                <div class="ui top left attached black label">맞춤형 서비스</div>
+                
+                <div class = "fs-4">테일러(Tailor) 서비스</div>
+   ￦550,000/건/월
+              </button>
+            </div>  
+  
+            <div class="col-lg-3 col-11 mt-5">
+              <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="테일러" style = "border-bottom:10px double mediumpurple;">
+                <div class="ui top left attached black label">맞춤형 서비스</div>
+                <div class = "fs-4">스톡킹(Stock_king) 서비스</div>
+   ￦5,500,000/DB파일/월
+              </button>
+            </div>
+            
+            
+  
         </div>
-
-        <div class="col-lg-3 col-11">
-          <button class="ui button full-width items"  onclick="bg_change($(this).attr('id'))"  id="골드" style = "border-bottom:10px double gold;">
-            골드(Gold) <br />
-            ￦2,200,000/6개월
-          </button>
-        </div>
-
-        <div class="col-lg-3 col-11">
-          <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="프리미엄" style = "border-bottom:10px double black;">
-            프리미엄(Premium) <br />
-            ￦3,850,000/ <span class = "text-small">12개월</span>
-          </button>
-        </div>
-      
-        
-        <div class="col-lg-3 col-11">
-          <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="테일러" style = "border-bottom:10px double purple;">
-            테일러(Tailor) 서비스  <br />
-￦550,000/건/월
-          </button>
-        </div>       
-    </div>
-
-    <div class="ui secondary segment my-5">
-      <p>
-       <h2 id = "item-name"></h2>특전 혜택
-       <ul>
-        <li>무료체험 서비스(7일간) : 실버/골드/프리미엄 고객 (테일러 서비스는 제외)</li>
-        <li>실시간 급등 주식 종목 SMS 알림 서비스 :  실버/골드/프리미엄 고객 (테일러 서비스는 제외)</li>
-      </ul>
-      </p>
-
-      <div class="d-grid gap-2"> 
-        <button class="ui yellow button full-width"><a href = "./join.html">가입하기</a></button>
-
-        <!-- if logined -->
-        <!-- <button class="ui yellow button full-width" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          구독하기
-        </button>                     -->
-      </div>
-      <div class="collapse" id="collapseExample">
-        <div class="ui yellow segment">
-          <h1><span id = "item-name2">실버</span> 상품의 결제 수단을 선택하세요</h1>
-          <div class="ui form">
-            <div class="two fields">
-              <div class="field">
-                <label>이름</label>
-                <input type="text" placeholder="김나라" value = "김나라">
+  
+        <div class="ui secondary segment my-5">
+          <p>
+           <h2 id = "item-name"></h2>특전 혜택
+           <ul>
+            <li>무료체험 서비스(7일간) : 실버/골드/프리미엄 고객 (테일러 서비스는 제외)</li>
+            <li>실시간 급등 주식 종목 SMS 알림 서비스 :  실버/골드/프리미엄 고객 (테일러 서비스는 제외)</li>
+          </ul>
+          </p>
+  
+          <div class="d-grid gap-2"> 
+            <!-- <button class="ui yellow button full-width"><a href = "./join.html">가입하기</a></button> -->
+  
+            <!-- if logined -->
+            <button class="ui yellow button full-width" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              구독하기
+            </button>                    
+          </div>
+          <div class="collapse" id="collapseExample">
+            <div class="ui yellow segment">
+              <h1><span id = "item-name2">실버</span> 상품의 결제 수단을 선택하세요</h1>
+              <div class="ui form">
+                <div class="two fields">
+                  <div class="field">
+                    <label>이름</label>
+                    <input type="text" placeholder="김나라" value = "김나라">
+                  </div>
+                  <div class="field">
+                    <label>전화</label>
+                    <input type="text" placeholder="010-9111-0222" value="010-9111-0222">
+                  </div>                
+                </div>
               </div>
-              <div class="field">
-                <label>전화</label>
-                <input type="text" placeholder="010-9111-0222" value="010-9111-0222">
-              </div>                
+              <div class="ui two top attached buttons">
+                <div class="ui  button" style = "background-color: #C1C6C6;"> 
+                  <h3>무통장입금 계좌번호</h3>
+                  <h2 class = "text-primary">1005-203-472150</h2>
+                  <h3 class = "text-primary ">우리은행 이글레오에프티</h3>
+                  
+                   </div>
+                <div class="ui button" style="background-color: #d9d9d6; padding-top:4rem;">
+                  <a class = "text-dark" href = "./tailor8.html#t7"><h2>신용카드 결제</h2></a></div>
+            </div>                
             </div>
           </div>
-          <div class="ui two top attached buttons">
-            <div class="ui  button" style = "background-color: #C1C6C6;"> 
-              <h3>무통장입금 계좌번호</h3>
-              <h2 class = "text-primary">1005-203-472150</h2>
-              <h3 class = "text-primary">우리은행 </h3>
-              
-               </div>
-            <div class="ui button" style="background-color: #d9d9d6; padding-top:4rem;">
-              <a class = "text-dark" href = "./tailor8.html#t7"><h2>신용카드 결제</h2></a></div>
         </div>
-         
-          
-            <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-              <button class="btn btn-primary me-md-2" type="button">취소</button>
-              
-            </div> -->        
+  
+        <div class="row">
+          <div class="col">    
+            <h1 class="ui header"><a href = "./tailor8.html" target = "_blank"><i class = "suitcase icon"></i>테일러(Tailor)서비스란?</a></h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col"> 
+            <h1 class="ui header mt-3"><a href = "./stocking.html" target = "_blank"><i class = "chess king icon"></i>스톡킹(Stock king) 서비스란?</a></h1>
+          </div>        
+        </div>
+  
+        <h4 class="ui horizontal divider header">
+          <i class="won sign icon"></i>   
+        </h4>
+        <div class=" my-5">
+          멤버십 구매 시 참고하세요.<br/>       
+  취소 및 환불 규정 
+  
+  
+        <div class="ui bulleted list">
+          <div class="item">무료체험서비스는 정회원 가입 후 7일 간 제공 됩니다. 맞춤형 서비스는 제외
+          </div>
+          <div class="item">정회원(유료회원) 가입을 위한 구매 결제 완료 후 7일 이내 구매취소 가능 합니다(취소에 따른 환불 절차는 결제 수단에 따라 처리 방법 및 소요시간이 다를 수 있습니다.)
+          </div>
+       
+          <div class="item">구매 결제 완료 후 7일 경과 이후에는 제공 서비스의 특성 상 취소가 불가하오니 결제 시 반드시 유념 바랍니다.  
+          </div>
+          <div class="item">맞춤형 서비스의 취소/환불 규정은 별도 참고 바랍니다
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <!-- url 바꿔야 함 -->
-        <h1 class="ui header"><a href = "./tailor8.html" target = "_blank"><i class = "suitcase icon"></i>테일러(Tailor)서비스란?</a></h1>
-      </div>
+        
     
-    </div>
-
-    <h4 class="ui horizontal divider header">
-      <i class="won sign icon"></i>   
-    </h4>
-    <div class=" my-5">
-      멤버십 구매 시 참고하세요.<br/>       
-취소 및 환불 규정 
-
-
-    <div class="ui bulleted list">
-      <div class="item">무료체험서비스는 정회원 가입 후 7일 간 제공 됩니다. (테일러SVC는 제외)
-      </div>
-      <div class="item">정회원(유료회원) 가입을 위한 구매 결제 완료 후 7일 이내 구매취소 가능 합니다(취소에 따른 환불 절차는 결제 수단에 따라 처리 방법 및 소요시간이 다를 수 있습니다.)
-      </div>
-   
-      <div class="item">구매 결제 완료 후 7일 경과 이후에는 제공 서비스의 특성 상 취소가 불가하오니 결제 시 반드시 유념 바랍니다.  
-      </div>
-      <div class="item">테일러(Tailor)서비스의 취소/환불 규정은 별도 참고 바랍니다.
-      </div>
-    </div>
-  </div>
-    
-</section>  
-<!-- 고객센터 -->
+  
+  
+    </div>     
+</section>
+<!-- 지원 커뮤니티 -->
 <section id = "customer" class = "bg-white">
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto my-5 bg-e  text-center">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 bg-e  text-center">
         <h2 class="display-5">연락처 </h2>
         <p class="lead">궁금한 사항은 아래 회사 대표전화번호 또는 이메일을 통해 문의 바랍니다.</p>
         <div class="row my-5">
@@ -916,14 +824,10 @@ background-color: rgba(167, 168, 170,0.1);
                     </div>
                 </div>
             </div>
-
-
             <div class="col-lg-6 ">
-
                 <div class="wrapper">
                     <form class="ui form">
                         <div>
-
                             <label>이름</label>
                             <input class="input-field" type="text" required="">
                         </div>
@@ -936,7 +840,6 @@ background-color: rgba(167, 168, 170,0.1);
                             <textarea class="input-field form-control" id="cust_content"
                                 name="cust_content" rows="3"></textarea>
                         </div>
-
                         <input class="ui button" type="button" id="contact_submit" value="확인">
                     </form>
                 </div>
@@ -947,14 +850,9 @@ background-color: rgba(167, 168, 170,0.1);
             </div>
         </div>
     </div>
-
-
 </section>
-
         </div>
     </main>
-
-
     <div class="ui inverted vertical footer segment footer mt-auto py-3">
         <div class="ui container">
             <div class="row text-center">
@@ -964,7 +862,6 @@ background-color: rgba(167, 168, 170,0.1);
             </div>
         </div>
     </div>
-
     <script>
         function fun() {
             $('#fancy_h1_wrap').css('top', '');
@@ -972,10 +869,8 @@ background-color: rgba(167, 168, 170,0.1);
                 top: "-100%"
             }, 5000, fun);
         }
-
         fun();
     </script>
-
     <!-- import the webpage's javascript file -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
@@ -983,5 +878,4 @@ background-color: rgba(167, 168, 170,0.1);
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

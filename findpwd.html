@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="h-100" lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="주식, db, 이글레오" />
+    <meta name="author" content="임한석, 서천일" />
+    <meta name="generator" content="Jekyll v4.1.1" />
+    <meta property="og:title" content="주식 DB" />
+    <meta property="og:description" content="다양하게 분석하는 주식 DB" />
+    <meta property="og:image" content="images/thumbnail.png" />
+    <title>비밀번호 재설정</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&family=Noto+Sans+KR:wght@100;400;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
+
+
+    <style>
+   
+
+body {
+  display: flex;
+
+  padding-top: 40px;
+
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 30rem;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100 ">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-e rounded ui fixed menu p-2"
+            aria-label="Twelfth navbar example">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+      
+      
+                </button>
+                <span class="d-block d-sm-none"> 
+                    <a href="./index.html" class="header nav-link text-gray-e"><img
+                            class="logo" src="images/logo.png"></a></span>
+      
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10"
+                    style="height:2rem;">
+                    <ul class="nav navbar-nav d-flex justify-content-between full-width" >
+                        <li class="nav-item d-none d-sm-block">
+                            <a href="./index.html" class="header nav-link text-gray-e"><img class="logo"
+                                    src="images/logo.png"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./company.html" style="margin-top: 0.3rem;">회사 소개</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./service.html" style="margin-top: 0.3rem;">서비스 소개</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pros-3.html" style="margin-top: 0.3rem;">EGLEO DB 플랫폼</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact7.html" style="margin-top: 0.3rem;">지원 커뮤니티</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./subscribe6.html" style="margin-top: 0.3rem;">상품안내</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./example.html" style="margin-top: 0.3rem;">플랫폼 사용법</a>
+                        </li>
+      
+                        
+                        <div class="nav-item text-gray-e dropdown mt-1">
+                            <a class="nav-link dropdown-toggle text-gray-e" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                            로그인
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width" style="right: 0 !important;width: 24rem;">
+                        
+                                <form class="ui form my-3 mx-3">
+                                    <div class="field">
+                                        <label class="float-left">이메일 ID</label>
+                                        <input type="text" name="first-name" placeholder="">
+                                    </div>
+                                    <div class="field">
+                                        <label class="float-left">비밀 번호</label>
+                                        <input type="text" name="last-name" placeholder="">
+                                    </div>
+                
+                                    <button class="ui yellow button " type="submit">로그인</button> <br>
+                                    <button class="ui button tool-tip my-3" type="submit" data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
+                                    <div class="ul list text-center" style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
+                                        <a href="./join.html">회원 가입</a><br>
+                                        <a href="./findpwd.html">ID/비밀번호 찾기</a>
+                                    </div>
+                                </form>
+                            </ul>
+                          </div>             
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+      
+
+      <main role="main" class="flex-shrink-0 my-auto">
+
+        <main class="form-signin">
+            <form>
+            <div class = "bg-white" style = "border:3rem solid white;">
+              <h1 class="h3 mb-3 fw-normal">비밀번호를 잊어버렸나요?</h1>
+              <label for="inputEmail" class="visually-hidden fw-bold">이메일 <span class = "fw-light">이메일 아이디를 입력해주세요.</span></label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="이메일 주소" required="" autofocus="">
+            </div>
+              <button class="w-100 btn btn-lg btn-warning mt-5" type="submit">비밀번호 재설정</button>
+              <!-- <p class="mt-5 mb-3 text-muted">© 2017-2021</p> -->
+            </form>
+          </main>
+        
+      </main>
+
+    
+
+    <div class="ui inverted vertical footer segment footer mt-auto py-3">
+        <div class="ui container">
+            <div class="row text-center">
+                <div class="container-fluid">
+                    <small>(주)이글레오에프티 | 경기도 안양시 관양동 1591 평촌아크로타워 B동 2109호 | 사업자등록번호: 611-87-00868 | 대표: 서천일 </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

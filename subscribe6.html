@@ -113,7 +113,7 @@
                                 <button class="ui button tool-tip my-3" type="submit" data-content="방대하고 값진 주식관련 데이터 세계가 눈앞에 펼쳐집니다!!">비회원 둘러보기</button>
                                 <div class="ul list text-center" style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
                                     <a href="./join.html">회원 가입</a><br>
-                                    <a href="#">ID/비밀번호 찾기</a>
+                                    <a href="./findpwd.html">ID/비밀번호 찾기</a>
                                 </div>
                             </form>
                         </ul>
@@ -145,36 +145,53 @@
       </div>
       <div class="ui divider"></div>
   
-      <div class = "row my-5">        
-          <div class="col-lg-3 col-11">
-          
+      <div class = "row my-5 justify-content-center">        
+          <div class="col-lg-3 mx-5 col-11">
             <button class="ui button full-width items" onclick="bg_change($(this).attr('id'))"  id="실버" style = "border-bottom:10px double silver;">
-             실버(Silver) <br />
+              <div class="ui top left attached olive label">일반형 서비스</div>
+             
+             <div class = "fs-4">실버(Silver)</div>
               ￦1,100,000/3개월
             </button>
           </div>
 
           <div class="col-lg-3 col-11">
             <button class="ui button full-width items"  onclick="bg_change($(this).attr('id'))"  id="골드" style = "border-bottom:10px double gold;">
-              골드(Gold) <br />
+              <div class="ui top left attached olive label">일반형 서비스</div>
+              <div class = "fs-4">골드(Gold) </div>
               ￦2,200,000/6개월
             </button>
           </div>
 
-          <div class="col-lg-3 col-11">
+          <div class="col-lg-3  mx-5 col-11">
             <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="프리미엄" style = "border-bottom:10px double black;">
-              프리미엄(Premium) <br />
+              <div class="ui top left attached olive label">일반형 서비스</div>
+              <div class = "fs-4">프리미엄(Premium)</div>
               ￦3,850,000/ <span class = "text-small">12개월</span>
             </button>
           </div>
         
           
-          <div class="col-lg-3 col-11">
+          <div class="col-lg-3 col-11 mt-5">
+         
             <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="테일러" style = "border-bottom:10px double purple;">
-              테일러(Tailor) 서비스  <br />
+              <div class="ui top left attached black label">맞춤형 서비스</div>
+              
+              <div class = "fs-4">테일러(Tailor) 서비스</div>
  ￦550,000/건/월
             </button>
-          </div>       
+          </div>  
+
+          <div class="col-lg-3 col-11 mt-5">
+            <button class="ui button full-width items "  onclick="bg_change($(this).attr('id'))"  id="테일러" style = "border-bottom:10px double mediumpurple;">
+              <div class="ui top left attached black label">맞춤형 서비스</div>
+              <div class = "fs-4">스톡킹(Stock_king) 서비스</div>
+ ￦5,500,000/DB파일/월
+            </button>
+          </div>
+          
+          
+
       </div>
 
       <div class="ui secondary segment my-5">
@@ -218,13 +235,9 @@
                  </div>
               <div class="ui button" style="background-color: #d9d9d6; padding-top:4rem;">
                 <a class = "text-dark" href = "./tailor8.html#t7"><h2>신용카드 결제</h2></a></div>
-          </div>
-           
+          </div>          
             
-              <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                <button class="btn btn-primary me-md-2" type="button">취소</button>
-                
-              </div> -->        
+            
           </div>
         </div>
       </div>
@@ -233,6 +246,12 @@
         <div class="col">
           <!-- url 바꿔야 함 -->
           <h1 class="ui header"><a href = "./tailor8.html" target = "_blank"><i class = "suitcase icon"></i>테일러(Tailor)서비스란?</a></h1>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- url 바꿔야 함 -->
+          <h1 class="ui header mt-3"><a href = "./stocking.html" target = "_blank"><i class = "chess king icon"></i>스톡킹(Stock king) 서비스란?</a></h1>
         </div>
       
       </div>
@@ -246,14 +265,14 @@
 
 
       <div class="ui bulleted list">
-        <div class="item">무료체험서비스는 정회원 가입 후 7일 간 제공 됩니다. (테일러SVC는 제외)
+        <div class="item">무료체험서비스는 정회원 가입 후 7일 간 제공 됩니다. 맞춤형 서비스는 제외
         </div>
         <div class="item">정회원(유료회원) 가입을 위한 구매 결제 완료 후 7일 이내 구매취소 가능 합니다(취소에 따른 환불 절차는 결제 수단에 따라 처리 방법 및 소요시간이 다를 수 있습니다.)
         </div>
      
         <div class="item">구매 결제 완료 후 7일 경과 이후에는 제공 서비스의 특성 상 취소가 불가하오니 결제 시 반드시 유념 바랍니다.  
         </div>
-        <div class="item">테일러(Tailor)서비스의 취소/환불 규정은 별도 참고 바랍니다.
+        <div class="item">맞춤형 서비스의 취소/환불 규정은 별도 참고 바랍니다
         </div>
       </div>
     </div>
